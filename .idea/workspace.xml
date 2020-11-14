@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5d57ecd-8bbd-4fe1-8d35-45e83a9509b2" name="Default Changelist" comment="">
+    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1kHcFJtkWjY71jE3vGtkuVhKnFj" />
+  <component name="ProjectId" id="1kHgaQxMexugzJ9KdmPVtXxA30k" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,13 +47,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f5d57ecd-8bbd-4fe1-8d35-45e83a9509b2" name="Default Changelist" comment="" />
-      <created>1605360852441</created>
+      <changelist id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="" />
+      <created>1605362994227</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605360852441</updated>
-      <workItem from="1605360853562" duration="1140000" />
-      <workItem from="1605362900523" duration="15000" />
+      <updated>1605362994227</updated>
+      <workItem from="1605362995542" duration="18000" />
+      <workItem from="1605363014852" duration="43000" />
     </task>
     <servers />
   </component>
@@ -69,16 +70,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1605362175654">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605363019408">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.820@0.23.1440.820" timestamp="1605362175654" />
-    <state x="516" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605361379116">
-      <screen x="0" y="23" width="1440" height="820" />
-    </state>
-    <state x="516" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.820@0.23.1440.820" timestamp="1605361379116" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1605363019408" />
   </component>
 </project>
