@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="Anfänge sind langsam">
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_header.php" afterDir="false" />
@@ -103,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606314282325</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Anfänge sind langsam">
+      <created>1606321707161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606321707161</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,10 +143,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606314284296" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606314270664">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606333677611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606314270664" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606333677611" />
     <state x="973" y="0" width="954" height="1047" key="dock-window-1" timestamp="1606321701787">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
