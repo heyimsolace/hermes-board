@@ -19,8 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="justin stinkt sehr">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="wenig*">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +34,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1kHgaQxMexugzJ9KdmPVtXxA30k" />
   <component name="ProjectViewState">
@@ -62,6 +63,14 @@
       <workItem from="1605362995542" duration="18000" />
       <workItem from="1605363014852" duration="43000" />
     </task>
+    <task id="LOCAL-00001" summary="kabba">
+      <created>1606313631948</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606313631948</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,13 +89,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="justin stinkt sehr" />
-    <option name="LAST_COMMIT_MESSAGE" value="justin stinkt sehr" />
+    <MESSAGE value="kabba" />
+    <option name="LAST_COMMIT_MESSAGE" value="kabba" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605363019408">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606313653135">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1605363019408" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606313653135" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606313896742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606313896742" />
   </component>
 </project>
