@@ -4,9 +4,42 @@ $activePage = 'index';
 include __DIR__ . '/page_header.php';
 ?>
 <body>
-<h2>Zweileitung</h2>
-<h2>Hauptteil</h2>
-<h2>Schluss</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="card heel" >
+                <img class="card-img-top" src="img/_MG_1155.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">h/vinyls</h4>
+                    <p class="card-text">vinyl, music, vintage</p>
+                    <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card heel" >
+                <img class="card-img-top" src="img/_MG_1188.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">h/lol</h4>
+                    <p class="card-text">Some example text.</p>
+                    <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card heel" >
+                <img class="card-img-top" src="img/_MG_1330.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">h/kappa</h4>
+                    <p class="card-text">Some example text.</p>
+                    <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <?php
-include __DIR__ . '/page_header.php';?>
+include __DIR__ . '/page_footer.php';?>
