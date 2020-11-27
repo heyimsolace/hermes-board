@@ -26,20 +26,21 @@
             </form>
         </div>
         <!-- DropDown -->
-        <li class="nav-item dropdown mr-5 ">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                login
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="nav-item dropdown mr-5 ">
+            <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Login
+            </div>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <div>
                     <label class="ml-2"for="userId">User ID</label>
                     <input type="text" id="userId" name="userId">
                 </div>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <div>
+                    <label class="ml-2"for="userId">Password</label>
+                    <input type="password" id="userId" name="userId">
+                </div>
             </div>
-        </li>
+        </div>
     </nav>
 </head>
 <body>
