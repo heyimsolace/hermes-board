@@ -32,12 +32,10 @@
             </div>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <div>
-                    <label class="ml-2"for="userId">User ID</label>
-                    <input type="text" id="userId" name="userId">
+                    <input type="text" id="userId" name="userId" placeholder="User ID">
                 </div>
                 <div>
-                    <label class="ml-2"for="userId">Password</label>
-                    <input type="password" id="userId" name="userId">
+                    <input type="password" id="userId" name="userId" placeholder="Passwort">
                 </div>
             </div>
         </div>
