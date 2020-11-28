@@ -25,8 +25,6 @@
                 <button class="searchbar btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
             </form>
         </div>
-        <!-- Create Post -->
-        <a href="postCreation.php"> <button type="button" class="btn btn-dark">POST!</button> </a>
         <!-- DropDown -->
         <div class="nav-item dropdown mr-5 ">
             <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -34,11 +32,10 @@
             </div>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <div>
-                    <label class="ml-2"for="userId">User ID</label>
+                    <input type="text" id="userId" name="userId" placeholder="User ID">
                 </div>
                 <div>
-                    <label class="ml-2"for="userId">Password</label>
-                    <input type="password" id="userId" name="userId">
+                    <input type="password" id="userId" name="userId" placeholder="Passwort">
                 </div>
             </div>
         </div>

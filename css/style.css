@@ -36,7 +36,7 @@ html {
     margin-top: 10px;
     min-width: 200px;
 }
-}
+
 .searchbar {
     color: #f6f4e6;
 }
@@ -50,4 +50,7 @@ html {
 
 }
 .heel h4 {
+}
+.login {
+    color: #fddb3a;
 }
