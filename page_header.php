@@ -25,6 +25,8 @@
                 <button class="searchbar btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
             </form>
         </div>
+        <!-- Create Post -->
+        <a href="postCreation.php"> <button type="button" class="btn btn-dark">POST!</button> </a>
         <!-- DropDown -->
         <div class="nav-item dropdown mr-5 ">
             <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
