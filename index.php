@@ -13,6 +13,24 @@ include __DIR__ . '/page_header.php';
 
         <?php $heelTitle = "h/flowers"; $heelTags = "flowers, nature, beautiful"; $heelImgRef ="img/reference/_MG_1330.jpg"?>
         <?php include  __DIR__ . '/heel.php'?>
+
+        <?php $heelTitle = "h/flowers"; $heelTags = "flowers, nature, beautiful"; $heelImgRef ="img/reference/_MG_1330.jpg"?>
+        <?php include  __DIR__ . '/heel.php'?>
+
+        <?php $heelTitle = "h/flowers"; $heelTags = "flowers, nature, beautiful"; $heelImgRef ="img/reference/_MG_1330.jpg"?>
+        <?php include  __DIR__ . '/heel.php'?>
+
+        <?php $heelTitle = "h/flowers"; $heelTags = "flowers, nature, beautiful"; $heelImgRef ="img/reference/_MG_1330.jpg"?>
+        <?php include  __DIR__ . '/heel.php'?>
+
+        <?php $heelTitle = "h/flowers"; $heelTags = "flowers, nature, beautiful"; $heelImgRef ="img/reference/_MG_1330.jpg"?>
+        <?php include  __DIR__ . '/heel.php'?>
+
+        <?php $heelTitle = "h/flowers"; $heelTags = "flowers, nature, beautiful"; $heelImgRef ="img/reference/_MG_1330.jpg"?>
+        <?php include  __DIR__ . '/heel.php'?>
+
+        <?php $heelTitle = "h/flowers"; $heelTags = "flowers, nature, beautiful"; $heelImgRef ="img/reference/_MG_1330.jpg"?>
+        <?php include  __DIR__ . '/heel.php'?>
     </div>
 </div>
 

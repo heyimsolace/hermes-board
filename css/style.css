@@ -13,8 +13,30 @@ html {
     border-width: 2px;
     color: #f6f4e6;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
+#textboxid
+{
+    height:200px;
+    font-size:14pt;
+    resize: none;
+}
+.postBox {
+    background-color: darkgrey;
+    border-color: yellow;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.postTitle {
+    margin-top: 10px;
+    min-width:600px;
+}
+.postTags {
+    margin-top: 10px;
+    min-width: 200px;
+}
+}
 .searchbar {
     color: #f6f4e6;
 }
