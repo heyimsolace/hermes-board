@@ -10,10 +10,9 @@ include __DIR__ . '/page_header.php';
             <input type="text" class="postTags" name="userId" placeholder="Tags">
         </div>
     </div>
-    <p></p>
-    <div class=" align-middle">
-            <div class="form-group">
-                <textarea class="form-control postBox" id="exampleFormControlTextarea1" placeholder="Your Story!" rows="28"></textarea>
+    <div class="align-middle">
+            <div class="form-group mt-3">
+                <textarea class="form-control postBox border" id="exampleFormControlTextarea1" placeholder="Your Story!" rows="28"></textarea>
             </div>
     </div>
 </div>
