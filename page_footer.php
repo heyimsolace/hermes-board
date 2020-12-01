@@ -1,7 +1,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="page-footer font-small blue pt-4 bg-dark">
+<footer class="page-footer font-small blue pt-4 bg-dark footer">
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
         <!-- Grid row -->
@@ -20,7 +20,7 @@
                 <h5 class="text-uppercase">Links</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a>Link 1</a>
+                        <a>Paypal Me</a>
                     </li>
                 </ul>
             </div>
@@ -31,7 +31,7 @@
                 <h5 class="text-uppercase">Links</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a>Link 1</a>
+                        <a>Impressum</a>
                     </li>
                 </ul>
             </div>
