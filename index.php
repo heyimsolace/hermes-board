@@ -41,4 +41,5 @@ include __DIR__ . '/page_header.php'; // HEADER
 </div>
 
 <?php
-include __DIR__ . '/page_footer.php';?> // FOOTER
+// FOOTER
+include __DIR__ . '/page_footer.php';?>
