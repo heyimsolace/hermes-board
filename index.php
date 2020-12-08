@@ -1,30 +1,18 @@
 <?php
 $activePage = 'index';
 
-// DATABASE INTEGRATION
-
-// DB INFO
-$servername = "game.blur-group.eu";
-$username = "hermes";
-$password = "hermes";
-$database = "hermes_board";
-
-// DB CONNECT
-try {
-    $db = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
-} catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-}
+include __DIR__ . '/db.php'; // DB Verbindung -- Gibt pdo als $db
 
 // DB FETCH HEELS
 $sql = "select * from heel";
-$result = $db->query($sql);
+if (isset($db)) {
+    $result = $db->query($sql);
+}
 if ($result) {
     $heels = $result->fetchAll();
 } else {
     echo "fuck";
 }
-// DB END
 
 include __DIR__ . '/page_header.php'; // HEADER
 ?>
@@ -41,4 +29,4 @@ include __DIR__ . '/page_header.php'; // HEADER
 </div>
 
 <?php
-include __DIR__ . '/page_footer.php';?> // FOOTER
+include __DIR__ . '/page_footer.php'; // FOOTER?>
