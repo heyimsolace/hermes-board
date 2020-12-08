@@ -52,31 +52,44 @@ if ($uploadOk == 0) {
     $filename = $_POST["name-1"] . "_" . round(microtime(true)) . "." . end($tmp001);
     $filepath = $target_dir . $filename;
     // upload
-    if (move_uploaded_file($_FILES["file-1"]["tmp_name"], $filepath)) {
-        //if image uploaded, put heel in db
-        if (!empty($database) || !empty($db)) {
-            try {
-                $sql = $db->prepare("INSERT INTO heel(heelName, heelTag1, heelTag2, heelTag3, heelImgRef)
+
+    try {
+        if (!empty($database) && !empty($db)) {
+            $db->beginTransaction();
+
+            $sql = $db->prepare("INSERT INTO heel(heelName, heelTag1, heelTag2, heelTag3, heelImgRef)
                  values (:heelName, :heelTag1, :heelTag2, :heelTag3, :heelImgRef)");
 
-                $sql->bindParam(':heelName', $_POST["name-1"]);
-                $sql->bindParam(':heelTag1', $_POST["heelTag1"]);
-                $sql->bindParam(':heelTag2', $_POST["heelTag2"]);
-                $sql->bindParam(':heelTag3', $_POST["heelTag3"]);
-                $sql->bindParam(':heelImgRef', $filepath);
+            $sql->bindParam(':heelName', $_POST["name-1"]);
+            $sql->bindParam(':heelTag1', $_POST["heelTag1"]);
+            $sql->bindParam(':heelTag2', $_POST["heelTag2"]);
+            $sql->bindParam(':heelTag3', $_POST["heelTag3"]);
+            $sql->bindParam(':heelImgRef', $filepath);
 
-                if ($sql->execute()) {
-                    echo "geschafft";
-                }
-
-            } catch (PDOException $e) {
-                echo "Error... " . $e->getMessage();
+            if ($sql->execute()) {
+                echo "geschafft";
             }
 
+            if (move_uploaded_file($_FILES["file-1"]["tmp_name"], $filepath)) {
+                //if image uploaded, put heel in db
+            } else {
+                echo "There was an error uploading your file. ";
+                throw new Exception("Datei konnte nicht Hochgeladen werden!");
+            }
+
+        } else {
+            echo "Datenbank Fehler!";
+            throw new PDOException('$db oder $database leer!');
         }
-        echo "The file " . htmlspecialchars(basename($_FILES["file-1"]["name"])) . " has been uploaded. ";
-    } else {
-        echo "There was an error uploading your file. ";
+    } catch (PDOException $e1) {
+        echo "Error... " . $e1->getMessage();
+        $db->rollBack();
+    } catch (Exception $e2) {
+        echo "Error... " . $e2->getMessage();
+        $db->rollBack();
     }
+
+    echo "The file " . htmlspecialchars(basename($_FILES["file-1"]["name"])) . " has been uploaded. ";
+
 }
 ?>
