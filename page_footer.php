@@ -10,7 +10,7 @@
             <div class="col-md-6 mt-md-0 mt-3">
                 <!-- Content -->
                 <h5 class="text-uppercase">itc project</h5>
-                <p>Justin stinkt!</p>
+                <p>Janis stinkt!</p>
             </div>
             <!-- Grid column -->
             <hr class="clearfix w-100 d-md-none pb-3">
