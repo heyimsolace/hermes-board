@@ -14,9 +14,9 @@ include __DIR__ . '/page_header.php'; // HEADER
 
         <div>
 
-            <input type="text" name="heeltag-1" id="heeltag-1">
-            <input type="text" name="heeltag-2" id="heeltag-2">
-            <input type="text" name="heeltag-3" id="heeltag-3">
+            <input type="text" name="heelTag1" id="heelTag1">
+            <input type="text" name="heelTag2" id="heelTag2">
+            <input type="text" name="heelTag3" id="heelTag3">
             <label for="heeltags">Tags</label>
         </div>
 

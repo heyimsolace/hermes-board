@@ -50,20 +50,20 @@ if ($uploadOk == 0) {
     // randomize name to avoid copies
     $tmp001 = explode(".", $_FILES["file-1"]["name"]);
     $filename = $_POST["name-1"] . "_" . round(microtime(true)) . "." . end($tmp001);
+    $filepath = $target_dir . $filename;
     // upload
-    if (move_uploaded_file($_FILES["file-1"]["tmp_name"], $target_dir . $filename)) {
+    if (move_uploaded_file($_FILES["file-1"]["tmp_name"], $filepath)) {
         //if image uploaded, put heel in db
         if (!empty($database) || !empty($db)) {
             try {
-                $sql = $db->prepare("Insert into " . $database .
-                    "(heelName, heelTag1, heelTag2, heelTag3, heelImgRef)
+                $sql = $db->prepare("INSERT INTO heel(heelName, heelTag1, heelTag2, heelTag3, heelImgRef)
                  values (:heelName, :heelTag1, :heelTag2, :heelTag3, :heelImgRef)");
 
                 $sql->bindParam(':heelName', $_POST["name-1"]);
                 $sql->bindParam(':heelTag1', $_POST["heelTag1"]);
                 $sql->bindParam(':heelTag2', $_POST["heelTag2"]);
                 $sql->bindParam(':heelTag3', $_POST["heelTag3"]);
-                $sql->bindParam(':heelImgRef', $_POST["heelImgRef"]);
+                $sql->bindParam(':heelImgRef', $filepath);
 
                 if ($sql->execute()) {
                     echo "geschafft";
