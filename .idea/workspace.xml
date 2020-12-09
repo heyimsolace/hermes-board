@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="Anfänge sind langsam">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="Rad neu erfunden" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +48,9 @@
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\templates" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board" />
+      <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\sites" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\js" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\css" />
     </key>
@@ -83,6 +69,10 @@
       <workItem from="1606414368209" duration="3076000" />
       <workItem from="1606417547353" duration="106000" />
       <workItem from="1606492349385" duration="243000" />
+      <workItem from="1606570840840" duration="4701000" />
+      <workItem from="1606817118858" duration="926000" />
+      <workItem from="1606840727060" duration="2991000" />
+      <workItem from="1607099670670" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="kabba">
       <created>1606313631948</created>
@@ -133,7 +123,49 @@
       <option name="project" value="LOCAL" />
       <updated>1606417573237</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="css?">
+      <created>1606495037420</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606495037420</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Dropdown stuff">
+      <created>1606497200559</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606497200559</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Dropdown stuff">
+      <created>1606497660580</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606497660580</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Rad neu erfunden">
+      <created>1606843780701</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606843780701</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Rad neu erfunden">
+      <created>1606843795098</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606843795098</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Rad neu erfunden">
+      <created>1607099695125</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607099695126</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,11 +174,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -156,16 +218,20 @@
     <MESSAGE value="Bootstrap und JS" />
     <MESSAGE value="Alte index.html gone" />
     <MESSAGE value="Anfänge sind langsam" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anfänge sind langsam" />
+    <MESSAGE value="css?" />
+    <MESSAGE value="Dropdown stuff" />
+    <MESSAGE value="Rad neu erfunden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rad neu erfunden" />
   </component>
   <component name="WindowStateProjectService">
     <state x="462" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606414385959">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="462" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.875@0.25.1440.875" timestamp="1606414385959" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1606320320200">
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1606835433235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="1220" y="278" key="FileChooserDialogImpl/-1680.32.1680.1010/1920.13.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606835433235" />
     <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@-1680.32.1680.1010" timestamp="1606320320200" />
     <state x="144" y="98" key="MergeDialog" timestamp="1606417646587">
       <screen x="0" y="25" width="1440" height="875" />
@@ -179,15 +245,20 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="540" y="386" key="NewPhpFileDialog/0.25.1440.875@0.25.1440.875" timestamp="1606415976860" />
-    <state x="414" y="238" key="Vcs.Push.Dialog.v2" timestamp="1606417577640">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="2472" y="266" key="Vcs.Push.Dialog.v2" timestamp="1607099703696">
+      <screen x="1920" y="13" width="1920" height="1040" />
     </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1680.32.1680.1010/1920.13.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606843805331" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606334831902" />
+    <state x="2472" y="266" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@1920.13.1920.1040" timestamp="1607099703696" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.13.1920.1040/-1680.32.1680.1010@0.0.1920.1040" timestamp="1606497662988" />
     <state x="414" y="238" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1606417577640" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606334867526">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606843894669">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606334867526" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1680.32.1680.1010/1920.13.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606843894669" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606817130725" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.13.1920.1040/-1680.32.1680.1010@0.0.1920.1040" timestamp="1606494929711" />
     <state x="973" y="0" width="954" height="1047" key="dock-window-1" timestamp="1606321701787">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
