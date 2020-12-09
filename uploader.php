@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/db.php'; // DB Verbindung -- Gibt pdo als $db
+include 'db.php'; // DB Verbindung -- Gibt pdo als $db
 
 $target_dir = __DIR__ . '/img/reference/';
 $target_file = $target_dir . basename($_FILES["file-1"]["name"]);
