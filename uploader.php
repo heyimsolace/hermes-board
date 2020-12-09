@@ -2,7 +2,7 @@
 
 include __DIR__ . '/db.php'; // DB Verbindung -- Gibt pdo als $db
 
-$target_dir = "img/reference/";
+$target_dir = __DIR__ . '/img/reference/';
 $target_file = $target_dir . basename($_FILES["file-1"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -77,9 +77,10 @@ if ($uploadOk == 0) {
                 throw new Exception("Datei konnte nicht Hochgeladen werden!");
             }
 
+            $db->commit();
         } else {
             echo "Datenbank Fehler!";
-            throw new PDOException('$db oder $database leer!');
+            throw new Exception('$db oder $database leer!');
         }
     } catch (PDOException $e1) {
         echo "Error... " . $e1->getMessage();

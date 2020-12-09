@@ -5,7 +5,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="Rad neu erfunden" />
+    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="Rad neu erfunden">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img-upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/img-upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page_footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/uploader.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +44,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -48,11 +57,11 @@
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\itc-projekte\hermes-board\templates" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\templates" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\sites" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\js" />
-      <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,6 +82,7 @@
       <workItem from="1606817118858" duration="926000" />
       <workItem from="1606840727060" duration="2991000" />
       <workItem from="1607099670670" duration="836000" />
+      <workItem from="1607520687925" duration="494000" />
     </task>
     <task id="LOCAL-00001" summary="kabba">
       <created>1606313631948</created>

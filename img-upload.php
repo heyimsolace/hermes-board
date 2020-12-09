@@ -1,7 +1,5 @@
 <?php
-
-
-include __DIR__ . '/page_header.php'; // HEADER
+include __DIR__ . '/templates/page_header.php'; // HEADER
 ?>
     <body>
 
@@ -31,9 +29,5 @@ include __DIR__ . '/page_header.php'; // HEADER
 
     </form>
 
-
-
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script type="text/javascript" src="js/image-uploader.js"></script>
-    </body>
-</html>
+<?php
+include __DIR__ . '/templates/page_footer.php';
