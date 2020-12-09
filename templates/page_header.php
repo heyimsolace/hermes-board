@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hermes Board</title>
-    <script src="../js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo_tiny.png">
