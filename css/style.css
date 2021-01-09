@@ -1,9 +1,9 @@
 html {
 
 }
-@font-face {
-    font-family: SansitaSwashed;
-    src: url('/font/SansitaSwashed-Regular.ttf') format('truetype');
+
+.header-logo {
+    width: 64px;
 }
 
 .heel {
@@ -47,7 +47,6 @@ html {
     object-position: 20% 10%; /* try 20px 10px */
     filter: hue-rotate(240deg) blur(50) grayscale(50%);
     -webkit-filter: blur(1pt);
-
 }
 .heel h4 {
 }
@@ -59,4 +58,51 @@ html {
 }
 .login{
     color: #f6f4e6;
+}
+
+
+.postCreation #form-container {
+    width: 80%;
+    margin: 30%;
+
+}
+
+.postCreation row {
+    margin-top: 15px;
+}
+.postCreation row.form-group {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.postCreation btn {
+    margin-left: 15px;
+}
+
+.postCreation change-link {
+    background-color: #000;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    bottom: 0;
+    color: #fff;
+    opacity: 0.8;
+    padding: 4px;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+}
+.postCreation change-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.postCreation img {
+    width: 150px;
+}
+
+.postCreation #editor-container {
+    height: 130px;
+}
+
+a {
+    color: yellow;
 }

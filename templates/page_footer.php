@@ -1,5 +1,3 @@
-</div>
-
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4 bg-dark footer">
     <!-- Footer Links -->
@@ -20,7 +18,7 @@
                 <h5 class="text-uppercase">Links</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a>Paypal Me</a>
+                        <a href="http://paypal.me/JustinDerks">Paypal Me</a>
                     </li>
                 </ul>
             </div>

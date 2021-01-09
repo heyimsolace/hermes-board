@@ -1,22 +1,67 @@
 <?php
 $activePage = 'index';
-include __DIR__ . '/page_header.php';
+include __DIR__ . '/templates/page_header.php';
 ?>
-<p></p>
-<div class="container">
-    <div class="align-middle">
-        <div>
-            <input type="text" class="postTitle" name="userId" placeholder="Post Title">
-            <input type="text" class="postTags" name="userId" placeholder="Tags">
-        </div>
-    </div>
-    <div class="align-middle">
-            <div class="form-group mt-3">
-                <textarea class="form-control postBox border" id="exampleFormControlTextarea1" placeholder="Your Story!" rows="28"></textarea>
+
+<div id="form-container" class="container postCreation">
+    <form>
+        <div class="row">
+            <div class="col-xs-4">
+                    <img class="img-rounded postCreation-img" src="https://hermes-board.tk/img/reference/1200px-Siemens-PC-D.jpg">
+                    <button class="btn btn-primary" href='#'>Change picture</button>
             </div>
-    </div>
+            <div class="col-xs-8">
+                <div class="form-group">
+                    <label for="display_name">Display name</label>
+                    <input class="form-control" name="display_name" type="text" value="Wall-E">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input class="form-control"  name="location" type="text" value="Earth">
+                </div>
+            </div>
+        </div>
+        <div class="row form-group">
+            <input name="about" type="hidden">
+            <div id="editor-container">
+                <p>Your Text!.</p>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-primary" type="submit">Save Profile</button>
+        </div>
+    </form>
 </div>
 
+<script>
+    var quill = new Quill('#editor-container', {
+        modules: {
+            toolbar: [
+                ['bold', 'italic'],
+                ['link', 'blockquote', 'code-block', 'image'],
+                [{ list: 'ordered' }, { list: 'bullet' }]
+            ]
+        },
+        placeholder: 'Compose an epic...',
+        theme: 'snow'
+    });
+
+    var form = document.querySelector('form');
+    form.onsubmit = function() {
+        // Populate hidden form on submit
+        var about = document.querySelector('input[name=about]');
+        about.value = JSON.stringify(quill.getContents());
+
+        console.log("Submitted", $(form).serialize(), $(form).serializeArray());
+
+        // No back end to actually submit to!
+        alert('Open the console to see the submit data!')
+        return false;
+    };
+</script>
+
+
+
 <?php
-include __DIR__ . '/page_footer.php';?>
+include __DIR__ . '/templates/page_footer.php'; ?>
 
