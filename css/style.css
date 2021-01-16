@@ -49,6 +49,7 @@ html {
     -webkit-filter: blur(1pt);
 }
 .heel h4 {
+    text-shadow: 2px 2px #3c3c3c;
 }
 .login {
     color: #fddb3a;
@@ -60,11 +61,8 @@ html {
     color: #f6f4e6;
 }
 
-
-.postCreation #form-container {
-    width: 80%;
-    margin: 30%;
-
+.postCreation.container{
+    margin-top: 50px;
 }
 
 .postCreation row {
@@ -78,31 +76,50 @@ html {
     margin-left: 15px;
 }
 
-.postCreation change-link {
+.postCreation a {
     background-color: #000;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    bottom: 0;
+    bottom: 10%;
     color: #fff;
     opacity: 0.8;
     padding: 4px;
     position: absolute;
     text-align: center;
-    width: 150px;
+    width: 300px;
+
 }
-.postCreation change-link:hover {
+.postCreation a:hover {
     color: #fff;
     text-decoration: none;
 }
 
+.creationImgBox{
+    width: 300px;
+    height: 300px;
+    border-color: #52575d;
+    border-width: 2px;
+    color: #f6f4e6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .postCreation img {
-    width: 150px;
+    width: 100%; /* width of container */
+    height: 100%; /* height of container */
+    object-fit: cover;
+    object-position: 20% 10%; /* try 20px 10px */
 }
 
 .postCreation #editor-container {
     height: 130px;
 }
 
+.postCreation button {
+    position: center;
+    margin-top: 10px;
+}
+
 a {
-    color: yellow;
+    color:yellow;
 }

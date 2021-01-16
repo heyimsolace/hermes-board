@@ -3,14 +3,17 @@ $activePage = 'index';
 include __DIR__ . '/templates/page_header.php';
 ?>
 
-<div id="form-container" class="container postCreation">
+<div class="container postCreation">
     <form>
         <div class="row">
-            <div class="col-xs-4">
-                    <img class="img-rounded postCreation-img" src="https://hermes-board.tk/img/reference/1200px-Siemens-PC-D.jpg">
-                    <button class="btn btn-primary" href='#'>Change picture</button>
+            <div class="col-md-4">
+                <div class="creationImgBox">
+                    <img class="rounded postCreation-img" src="https://hermes-board.tk/img/reference/1200px-Siemens-PC-D.jpg">
+
+                </div>
+                <a class="change-link" href='#'>Change</a>
             </div>
-            <div class="col-xs-8">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label for="display_name">Display name</label>
                     <input class="form-control" name="display_name" type="text" value="Wall-E">
@@ -19,17 +22,19 @@ include __DIR__ . '/templates/page_header.php';
                     <label for="location">Location</label>
                     <input class="form-control"  name="location" type="text" value="Earth">
                 </div>
-            </div>
-        </div>
-        <div class="row form-group">
-            <input name="about" type="hidden">
-            <div id="editor-container">
-                <p>Your Text!.</p>
+                <div class="form-group">
+                    <input name="about" type="hidden">
+                    <div id="editor-container">
+                        <p>Your Text!.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <button class="btn btn-primary" type="submit">Save Profile</button>
+
+            <button class="btn btn-primary float-right" type="submit">Post!</button>
         </div>
+
     </form>
 </div>
 
