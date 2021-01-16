@@ -4,28 +4,34 @@ include __DIR__ . '/templates/page_header.php';
 ?>
 
 <div class="container postCreation">
-    <form>
+    <form action="/uploader.php">
         <div class="row">
             <div class="col-md-4">
                 <div class="creationImgBox">
-                    <img class="rounded postCreation-img" src="https://hermes-board.tk/img/reference/1200px-Siemens-PC-D.jpg">
+                    <img class="rounded postCreation-img"
+                         src="https://hermes-board.tk/img/reference/1200px-Siemens-PC-D.jpg">
 
                 </div>
                 <a class="change-link" href='#'>Change</a>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="display_name">Display name</label>
-                    <input class="form-control" name="display_name" type="text" value="Wall-E">
+                    <label for="heelName">Heel Name</label>
+                    <input class="form-control" name="heelName" type="text" placeholder="Epic HeelName">
                 </div>
+
                 <div class="form-group">
-                    <label for="location">Location</label>
-                    <input class="form-control"  name="location" type="text" value="Earth">
+                    <label for="tags">Tags</label>
+                    <div class="input-group">
+                        <input class="form-control" name="heelTag1" type="text" placeholder="Your">
+                        <input class="form-control" name="heelTag2" type="text" placeholder="Tags">
+                        <input class="form-control" name="heelTag3" type="text" placeholder="Here">
+                    </div>
                 </div>
                 <div class="form-group">
                     <input name="about" type="hidden">
                     <div id="editor-container">
-                        <p>Your Text!.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -44,7 +50,7 @@ include __DIR__ . '/templates/page_header.php';
             toolbar: [
                 ['bold', 'italic'],
                 ['link', 'blockquote', 'code-block', 'image'],
-                [{ list: 'ordered' }, { list: 'bullet' }]
+                [{list: 'ordered'}, {list: 'bullet'}]
             ]
         },
         placeholder: 'Compose an epic...',
@@ -52,7 +58,7 @@ include __DIR__ . '/templates/page_header.php';
     });
 
     var form = document.querySelector('form');
-    form.onsubmit = function() {
+    form.onsubmit = function () {
         // Populate hidden form on submit
         var about = document.querySelector('input[name=about]');
         about.value = JSON.stringify(quill.getContents());
@@ -64,7 +70,6 @@ include __DIR__ . '/templates/page_header.php';
         return false;
     };
 </script>
-
 
 
 <?php

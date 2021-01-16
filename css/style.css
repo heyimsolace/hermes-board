@@ -51,6 +51,11 @@ html {
 .heel h4 {
     text-shadow: 2px 2px #3c3c3c;
 }
+
+.heel p {
+    text-shadow: 2px 2px #3c3c3c;
+}
+
 .login {
     color: #fddb3a;
 }
@@ -120,7 +125,16 @@ html {
     margin-top: 10px;
 }
 
-a {
+a:link {
+    color:yellow;
+}
+a:visited {
+    color:yellow;
+}
+a:hover {
+    color:yellow;
+}
+a:active {
     color:yellow;
 }
 
