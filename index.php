@@ -14,7 +14,7 @@ if ($result) {
     echo "fuck";
 }
 
-include __DIR__ . '/page_header.php'; // HEADER
+include __DIR__ . '/templates/page_header.php'; // HEADER
 ?>
 
 <div class="container">
@@ -29,4 +29,4 @@ include __DIR__ . '/page_header.php'; // HEADER
 </div>
 
 <?php
-include __DIR__ . '/page_footer.php'; // FOOTER?>
+include __DIR__ . '/templates/page_footer.php'; // FOOTER

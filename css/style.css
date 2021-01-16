@@ -1,9 +1,9 @@
 html {
 
 }
-@font-face {
-    font-family: SansitaSwashed;
-    src: url('/font/SansitaSwashed-Regular.ttf') format('truetype');
+
+.header-logo {
+    width: 64px;
 }
 
 .heel {
@@ -47,9 +47,9 @@ html {
     object-position: 20% 10%; /* try 20px 10px */
     filter: hue-rotate(240deg) blur(50) grayscale(50%);
     -webkit-filter: blur(1pt);
-
 }
 .heel h4 {
+    text-shadow: 2px 2px #3c3c3c;
 }
 .login {
     color: #fddb3a;
@@ -59,4 +59,67 @@ html {
 }
 .login{
     color: #f6f4e6;
+}
+
+.postCreation.container{
+    margin-top: 50px;
+}
+
+.postCreation row {
+    margin-top: 15px;
+}
+.postCreation row.form-group {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.postCreation btn {
+    margin-left: 15px;
+}
+
+.postCreation a {
+    background-color: #000;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    bottom: 10%;
+    color: #fff;
+    opacity: 0.8;
+    padding: 4px;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+
+}
+.postCreation a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.creationImgBox{
+    width: 300px;
+    height: 300px;
+    border-color: #52575d;
+    border-width: 2px;
+    color: #f6f4e6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.postCreation img {
+    width: 100%; /* width of container */
+    height: 100%; /* height of container */
+    object-fit: cover;
+    object-position: 20% 10%; /* try 20px 10px */
+}
+
+.postCreation #editor-container {
+    height: 130px;
+}
+
+.postCreation button {
+    position: center;
+    margin-top: 10px;
+}
+
+a {
+    color:yellow;
 }

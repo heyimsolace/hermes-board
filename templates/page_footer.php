@@ -1,7 +1,5 @@
-</div>
-
 <!-- Footer -->
-<footer class="page-footer font-small blue pt-4 bg-dark footer">
+<footer class="page-footer font-small blue pt-4 bg-dark footer fixed-bottom">
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
         <!-- Grid row -->
@@ -9,18 +7,16 @@
             <!-- Grid column -->
             <div class="col-md-6 mt-md-0 mt-3">
                 <!-- Content -->
-                <h5 class="text-uppercase">itc project</h5>
-                <p>Janis stinkt!</p>
+                <p>Hermes-Board</p>
             </div>
             <!-- Grid column -->
             <hr class="clearfix w-100 d-md-none pb-3">
             <!-- Grid column -->
             <div class="col-md-3 mb-md-0 mb-3">
                 <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a>Paypal Me</a>
+                        <a href="http://paypal.me/JustinDerks">Paypal Me</a>
                     </li>
                 </ul>
             </div>
@@ -28,21 +24,15 @@
             <!-- Grid column -->
             <div class="col-md-3 mb-md-0 mb-3">
                 <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a>Impressum</a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Impressum</a>
                     </li>
                 </ul>
             </div>
             <!-- Grid column -->
         </div>
         <!-- Grid row -->
-    </div>
-    <!-- Footer Links -->
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright
-    </div>
     <!-- Copyright -->
 
 </footer>
