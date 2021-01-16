@@ -8,7 +8,7 @@ if (isset($db)) {
     $heel = $result->fetch();
 } else {
     echo "fuck"; }
-include __DIR__ . '/page_header.php';
+include __DIR__ . '/templates/page_header.php'; // HEADER
 $heelName = $heel['heelName'];
 $heelTag1 = $heel['heelTag1'];
 $heelTag2 = $heel['heelTag2'];
@@ -78,5 +78,5 @@ $heelImgRef = $heel['heelImgRef'];
 
 
 <?php
-include __DIR__ . '/page_footer.php';
+include __DIR__ . '/templates/page_footer.php'; // FOOTER
 ?>

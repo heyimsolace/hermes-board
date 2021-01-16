@@ -1,5 +1,5 @@
 <div class="col-sm">
-    <div class="card heel" onclick="location.href='index.php';"> <!--On Click Reference auf Forum -->
+    <div class="card heel" onclick="location.href='heelContent.php?id=<?=$heelTitle?>';"> <!--On Click Reference auf Forum -->
         <img class="card-img-top" src="<?=$heelImgRef?>" alt="Card image"> <!-- Variabel der Referenz-->
         <div class="card-img-overlay">
             <h4 class="card-title"><?=$heelTitle?></h4> <!-- Variabel des Titels-->
