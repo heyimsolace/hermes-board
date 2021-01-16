@@ -15,16 +15,15 @@ $heelTag2 = $heel['heelTag2'];
 $heelTag3 = $heel['heelTag3'];
 $heelImgRef = $heel['heelImgRef'];
 ?>
-
-<div class="content">
-    <div class="wrapper">
-        <div class="box"> <!-- Sticky Box-->
+<div class="heelContainer">
+    <div class="heelContent" id="sticky-sidebar">
+        <div class="heelContentBox">
             <div class="col-sm">
-                <div class="card heel" onclick="location.href='heelContent.php?id=<?=$heelName?>';">
-                    <img class="card-img-top" src="<?=$heelImgRef?>" alt="Card image">
+                <div class="card heel" onclick="location.href='heelContent.php?id=<?=$heelName?>';"> <!--On Click Reference auf Forum -->
+                    <img class="card-img-top" src="<?=$heelImgRef?>" alt="Card image"> <!-- Variabel der Referenz-->
                     <div class="card-img-overlay">
-                        <h4 class="card-title"><?=$heelName?></h4>
-                        <p class="card-text"><?=$heelTag1?>,<?=$heelTag2?>,<?=$heelTag3?></p>
+                        <h4 class="card-title"><?=$heelName?></h4> <!-- Variabel des Titels-->
+                        <p class="card-text"><?=$heelTag1?>,<?=$heelTag2?>,<?=$heelTag3?></p> <!-- Variabel der Tags-->
                     </div>
                 </div>
             </div>
@@ -35,13 +34,49 @@ $heelImgRef = $heel['heelImgRef'];
                 </div>
             </div>
         </div>
-        <div class="box"> <!-- Position of Endbox -->
-            <div class="col-sm">
+    </div>
+</div>
+    <div class="heelContainer">
+        <div class="heelContent">
+            <div class="card post position-sticky">
+                <h2>Welcome Message</h2>
+                <p></p>
             </div>
         </div>
     </div>
-</div>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
 
 <?php
-include __DIR__ . '/templates/page_footer.php'; ?>
-
+include __DIR__ . '/templates/page_footer.php'; // FOOTER
+?>
