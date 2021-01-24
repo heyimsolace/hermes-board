@@ -15,6 +15,7 @@ $heelTag2 = $heel['heelTag2'];
 $heelTag3 = $heel['heelTag3'];
 $heelImgRef = $heel['heelImgRef'];
 $heelTitle = $heel['heelName'];
+$heelDesc = $heel['heelDesc'];
 
 
 
@@ -35,29 +36,20 @@ $postVotes = $heelPost['postVotes']
 
 <div class="content">
     <div class="wrapper">
-        <div class="box"> <!-- Sticky Box-->
-            <?php include  __DIR__ . '/heelContent.php';?>
-        </div>
-        <div class="box"> <!-- Position of Endbox -->
-            <div class="col-sm">
+            <div class="box flex-column"> <!-- Sticky Box-->
+                <?php include  __DIR__ . '/heelContent.php';?>
             </div>
+
+        <p class="posts container flex-column border">
+                <?=$postContent?> ⁓ <?=$postCreatorID?>
+        </p>
+
+
+        <div class="box col-4"> <!-- Position of Endbox -->
+            <div class="col-4"></div>
         </div>
-    </div>
-    <div class="heelContainer">
-        <div class="heelContent">
-            <div class="col-sm">
-                <div class="card heel" onclick="location.href='heelContent.php?id=<?=$heelTitle?>';"> <!--On Click Reference auf Forum -->
-                    <img class="card-img-top" src="<?=$heelImgRef?>" alt="Card image"> <!-- Variabel der Referenz-->
-                    <div class="card-img-overlay">
-                        <h4 class="card-title"><?=$heelTitle?></h4> <!-- Variabel des Titels-->
-                        <p class="card-text"><?=$heelTag1?>,<?=$heelTag2?>,<?=$heelTag3?></p> <!-- Variabel der Tags-->
-                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+
 
 <?php
 include __DIR__ . '/templates/page_footer.php'; ?>

@@ -13,17 +13,18 @@ body{
 
 .content{
     position: relative;
-    width: 100%;
+    width: 400px;
 }
 
 .wrapper {
+    width: 400px;
     position: relative;
     margin-top: 44px;
     /*height: 2700px;*/
 }
 
 .box{
-    width: 100%;
+    width: 400px;
     height: 900px;
     top: 0; /* 44px ? */
     left: 0;
