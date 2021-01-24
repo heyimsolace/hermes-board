@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo_tiny.png">
 
-    <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
-    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet"> <!-- Formatter Textbox -->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
 
 
 </head>

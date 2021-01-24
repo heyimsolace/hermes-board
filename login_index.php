@@ -1,6 +1,6 @@
 <?php
 $activePage = 'login_index';
-include __DIR__ . '/page_header.php';
+include __DIR__ . '/templates/page_header.php';
 ?>
 <html>
 <head>
@@ -29,4 +29,4 @@ endif;
 </body>
 </html>
 <?php
-include __DIR__ . '/page_footer.php';?>
+include __DIR__ . '/templates/page_footer.php';?>

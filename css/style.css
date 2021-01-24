@@ -48,12 +48,12 @@ html {
     filter: hue-rotate(240deg) blur(50) grayscale(50%);
     -webkit-filter: blur(1pt);
 }
-.heel h4 {
+.heel span {
+    background-color: rgba(150, 150, 150, 0.5);
+    padding: 5px;
+    border-radius: 5px;
     text-shadow: 2px 2px #3c3c3c;
-}
 
-.heel p {
-    text-shadow: 2px 2px #3c3c3c;
 }
 
 .login {

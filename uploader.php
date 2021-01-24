@@ -3,17 +3,17 @@
 include 'db.php'; // DB Verbindung -- Gibt pdo als $db
 
 $target_dir = __DIR__ . '/img/reference/';
-$target_file = $target_dir . basename($_FILES["file-1"]["name"]);
+$target_file = $target_dir . basename($_FILES["heelImage"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-echo $_FILES["file-1"]["name"];
+echo $_FILES["heelImage"]["name"];
 
-$file = $_FILES["file-1"]["name"];
+$file = $_FILES["heelImage"]["name"];
 
 // Check if image file is a actual image or fake image
 if (isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["file-1"]["tmp_name"]);
+    $check = getimagesize($_FILES["heelImage"]["tmp_name"]);
     if ($check !== false) {
         echo "File is an image - " . $check["mime"] . ". ";
         $uploadOk = 1;
@@ -30,7 +30,7 @@ if (file_exists($target_file)) {
 }
 
 // Check file size
-if ($_FILES["file-1"]["size"] > 70000000) {
+if ($_FILES["heelImage"]["size"] > 70000000) {
     echo "Sorry, your file is too large. ";
     $uploadOk = 0;
 }
@@ -48,8 +48,8 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     // randomize name to avoid copies
-    $tmp001 = explode(".", $_FILES["file-1"]["name"]);
-    $filename = $_POST["name-1"] . "_" . round(microtime(true)) . "." . end($tmp001);
+    $tmp001 = explode(".", $_FILES["heelImage"]["name"]);
+    $filename = $_POST["heelName"] . "_" . round(microtime(true)) . "." . end($tmp001);
     $filepath = $target_dir . $filename;
     // upload
 
@@ -60,7 +60,7 @@ if ($uploadOk == 0) {
             $sql = $db->prepare("INSERT INTO heel(heelName, heelTag1, heelTag2, heelTag3, heelImgRef)
                  values (:heelName, :heelTag1, :heelTag2, :heelTag3, :heelImgRef)");
 
-            $sql->bindParam(':heelName', $_POST["name-1"]);
+            $sql->bindParam(':heelName', $_POST["heelName"]);
             $sql->bindParam(':heelTag1', $_POST["heelTag1"]);
             $sql->bindParam(':heelTag2', $_POST["heelTag2"]);
             $sql->bindParam(':heelTag3', $_POST["heelTag3"]);
@@ -70,7 +70,7 @@ if ($uploadOk == 0) {
                 echo "geschafft";
             }
 
-            if (move_uploaded_file($_FILES["file-1"]["tmp_name"], $filepath)) {
+            if (move_uploaded_file($_FILES["heelImage"]["tmp_name"], $filepath)) {
                 //if image uploaded, put heel in db
             } else {
                 echo "There was an error uploading your file. ";
@@ -90,7 +90,7 @@ if ($uploadOk == 0) {
         $db->rollBack();
     }
 
-    echo "The file " . htmlspecialchars(basename($_FILES["file-1"]["name"])) . " has been uploaded. ";
+    echo "The file " . htmlspecialchars(basename($_FILES["heelImage"]["name"])) . " has been uploaded. ";
 
 }
 ?>

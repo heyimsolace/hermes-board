@@ -24,10 +24,8 @@ include __DIR__ . '/templates/page_header.php';
                     </div>
                 </div>
                 <div class="form-group">
-                    <input name="about" type="hidden">
-                    <div id="editor-container">
-                        <p id="heelDesc"></p>
-                    </div>
+                    <label for="desc">Heel Description</label>
+                    <textarea class="form-control" name="heelDesc" type="text" placeholder="Your Heel Description"></textarea>
                 </div>
                 <div class="form-group">
 
@@ -41,33 +39,9 @@ include __DIR__ . '/templates/page_header.php';
 </div>
 
 <script>
-    var quill = new Quill('#editor-container', {
-        modules: {
-            toolbar: [
-                ['bold', 'italic'],
-                ['link', 'blockquote', 'code-block', 'image'],
-                [{list: 'ordered'}, {list: 'bullet'}]
-            ]
-        },
-        placeholder: 'Compose an epic...',
-        theme: 'snow'
+    tinymce.init({
+        selector: '#formtextarea'
     });
-
-    var form = document.querySelector('form');
-    form.onsubmit = function () {
-        // Populate hidden form on submit
-        var about = document.querySelector('input[name=about]');
-        about.value = JSON.stringify(quill.getContents());
-
-        console.log("Submitted", $(form).serialize(), $(form).serializeArray());
-
-        // No back end to actually submit to!
-        alert('Open the console to see the submit data!')
-        return false;
-    };
-
-    var myEditor = document.querySelector('#heelDesc')
-    var html = myEditor.children[0].innerHTML
 </script>
 
 
