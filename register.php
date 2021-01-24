@@ -21,34 +21,35 @@ $pdo = new PDO('mysql:host=hermes-board.tk;dbname=hermes_board', 'hermes', 'herm
 echo '<a href="login_index.php?page=Login">Login</a>';
 
 
-if(isset($_POST['send'])):
-    $email =$_POST['email'];
-    $email_repeat =$_POST['email_repeat'];
-    $username =$_POST['username'];
-    $password_hash =$_POST['password_hash'];
-    $password_repeat =$_POST['password_repeat'];
+    if(isset($_POST['send'])):
+     $email =$_POST['email'];
+      $email_repeat =$_POST['email_repeat'];
+      $username =$_POST['username'];
+      $password_hash =$_POST['password_hash'];
+     $password_repeat =$_POST['password_repeat'];
 
-    $search_user = $pdo->prepare("Select count(userID) as c FROM user WHERE userName= :username");
-    $search_user->bindParam("username",$username);
+     $search_user = $pdo->prepare("Select count(userID) as c FROM user WHERE userName= :username");
+      $search_user->bindParam("username",$username);
 
-    $search_user->execute();
-    $search_result = $search_user->fetch(PDO::FETCH_ASSOC);
+     $search_user->execute();
+     $search_result = $search_user->fetch(PDO::FETCH_ASSOC);
 
-    if($search_result["c"]==0):
+     if($search_result["c"]==0):
 
-        if($password_hash == $password_repeat):
-            $password_hash =md5($password_hash);
-        $insert = $pdo->prepare("INSERT INTO user (userEmail,userName,userPassword) VALUES (:email,:username,:password_hash)");
-            $insert->bindParam("email",$email);
-            $insert->bindParam("username",$username);
-            $insert->bindParam("password_hash",$password_hash);
-        if($insert->execute()):
-            echo 'Your account is now Registered';
-        endif;
-        else:
-            echo 'Passwords are not equal!';
-        endif;
-        else:
-            echo 'Username is taken!';
-        endif;
-endif;
+           if($password_hash == $password_repeat):
+               $password_hash =md5($password_hash);
+            $insert = $pdo->prepare("INSERT INTO user (userEmail,userName,userPassword) VALUES (:email,:username,:password_hash)");
+                $insert->bindParam("email",$email);
+                $insert->bindParam("username",$username);
+                $insert->bindParam("password_hash",$password_hash);
+         if($insert->execute()):
+             echo 'Your account is now Registered';
+            endif;
+         else:
+             echo 'Passwords are not equal!';
+         endif;
+         else:
+                echo 'Username is taken!';
+         endif;
+    endif;
+
