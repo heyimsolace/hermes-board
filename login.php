@@ -1,35 +1,35 @@
-<div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Subscribe</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <i class="fas fa-user prefix grey-text"></i>
-          <input type="text" id="form3" class="form-control validate">
-          <label data-error="wrong" data-success="right" for="form3">Your name</label>
-        </div>
+<form action="" method="post">
+    Your Username:<br>
+    <input type="text" name="username" placeholder="Username"><br>
+    Your Passwort:<br>
+    <input type="password" name="password" placeholder="Password"><br>
+    <input type="submit" name="send" value="Send"><br>
+</form>
+<?php
+try{
+    $pdo = new PDO('mysql:host=hermes-board.tk;dbname=hermes_board', 'hermes', 'hermes',[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+}catch(PDOException $e){
+    echo "Connection failed" . $e->getMessage();
+}
+echo '<a href="login_index.php?page=Login">Login</a>';
 
-        <div class="md-form mb-4">
-          <i class="fas fa-envelope prefix grey-text"></i>
-          <input type="email" id="form2" class="form-control validate">
-          <label data-error="wrong" data-success="right" for="form2">Your email</label>
-        </div>
+if(isset($_POST['send'])):
+    $username = strtolower($_POST['username']);
+    $password = $_POST ['password'];
+    $password = md5($password);
 
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-indigo">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
-      </div>
-    </div>
-  </div>
-</div>
+    $search_user = $pdo->prepare ("SELECT userID From user WHERE userName = :username AND userPassword = :password");
+    $search_user->bindParam('username',$username);
+    $search_user->bindParam('password',$password);
+    $search_user->execute();
 
-<div class="text-center">
-  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm">Launch
-    Modal Subscription Form</a>
-</div>
+    if($search_user->rowCount() == 1):
+        $search_objekt = $search_user->fetchObject();
+        $_SESSION['user'] = $search_objekt->userID;
+        //header('Location:index.php');
+        else:
+        echo 'Username or Password is wrong';
+        endif;
+
+endif;
+
