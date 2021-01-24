@@ -26,7 +26,7 @@ if(isset($_POST['send'])):
     if($search_user->rowCount() == 1):
         $search_objekt = $search_user->fetchObject();
         $_SESSION['user'] = $search_objekt->userID;
-        //header('Location:index.php');
+        header('Location:index.php');
         else:
         echo 'Username or Password is wrong';
         endif;
