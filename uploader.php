@@ -2,11 +2,13 @@
 
 include 'db.php'; // DB Verbindung -- Gibt pdo als $db
 
-echo "5";
+echo "6";
 
-$relativePath = 'img/reference/';
-$target_dir = __DIR__ . $relativePath;
-$target_file = $target_dir . basename($_FILES["heelImage"]["name"]);
+$tmp001 = explode(".", $_FILES["heelImage"]["name"]);
+$filename = "h_" . $_POST["heelName"] . "." . end($tmp001);
+
+$target_dir = __DIR__ . 'img/reference/';
+$target_file = $target_dir . $filename;
 $uploadOk = true;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
@@ -78,11 +80,6 @@ try{
 
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == true) {
-    $tmp001 = explode(".", $_FILES["heelImage"]["name"]);
-    $filename = "h_" . $_POST["heelName"] . "." . end($tmp001);
-    $filepath = $relativePath . $filename;
-    $fullfilepath = $target_dir . $filename;
-
     try {
         if (!empty($database) && !empty($db)) {
             $db->beginTransaction();
@@ -94,13 +91,13 @@ if ($uploadOk == true) {
             $sql->bindParam(':heelTag1', $_POST["heelTag1"]);
             $sql->bindParam(':heelTag2', $_POST["heelTag2"]);
             $sql->bindParam(':heelTag3', $_POST["heelTag3"]);
-            $sql->bindParam(':heelImgRef', $filepath);
+            $sql->bindParam(':heelImgRef', $target_file);
             $sql->bindParam(':heelDesc', $_POST["heelDesc"]);
 
             $sql->execute();
 
-            echo "Filepath: " . $filepath . " ----- ";
-            if (move_uploaded_file($_FILES["heelImage"]["name"], $fullfilepath)) {
+            echo "Filepath: " . $target_file . " ----- ";
+            if (move_uploaded_file($_FILES["heelImage"]["tmp_name"], $target_file)) {
                 //if image uploaded, put heel in db
             } else {
                 echo "There was an error uploading your file. ";
