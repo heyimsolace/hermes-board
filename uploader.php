@@ -102,7 +102,8 @@ if ($uploadOk == true) {
             }
 
             $db->commit();
-            echo "Worked :)";
+            echo "<h1>Worked :)</h1>";
+            echo "<script>window.setTimeout(function(){ window.location.href = 'heelContentPage.php?id=$heelName'; }, 5000);</script>";
         } else {
             echo "Datenbank Fehler!";
             throw new Exception('$db oder $database leer!');
@@ -111,18 +112,18 @@ if ($uploadOk == true) {
         echo "<h1>Error... " . $e1->getMessage() . "</h1>";
         $db->rollBack();
         $uploadOk = false;
-        echo "<script>window.location.href = 'hermes-board.tk/heelCreation.php';</script>";
+        echo "<script>window.setTimeout(function(){ window.location.href = 'heelCreation.php'; }, 5000);</script>";
     } catch (Exception $e2) {
         echo "<h1>Error... " . $e2->getMessage() . "</h1>";
         $db->rollBack();
         $uploadOk = false;
-        echo "<script>window.location.href = 'hermes-board.tk/heelCreation.php';</script>";
+        echo "<script>window.setTimeout(function(){ window.location.href = 'heelCreation.php'; }, 5000);</script>";
     }
 
 
 } else {
     echo "<h1>Your Heel was not created.</h1>";
-    echo "<script>window.location.href = 'hermes-board.tk/heelCreation.php';</script>";
+    echo "<script>window.setTimeout(function(){ window.location.href = 'heelCreation.php'; }, 5000);</script>";
 }
 
 
