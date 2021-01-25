@@ -2,7 +2,7 @@
 
 include 'db.php'; // DB Verbindung -- Gibt pdo als $db
 
-echo "1";
+echo "2";
 
 $relativePath = 'img/reference/';
 $target_dir = __DIR__ . $relativePath;
@@ -98,7 +98,7 @@ if ($uploadOk == true) {
 
             $sql->execute();
 
-            echo $filepath;
+            echo "Filepath: " . $filepath . " ----- ";
             if (move_uploaded_file($_FILES["heelImage"]["tmp_name"], $filepath)) {
                 //if image uploaded, put heel in db
             } else {
