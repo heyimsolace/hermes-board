@@ -12,6 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="ffs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heelCreation.php" beforeDir="false" afterPath="$PROJECT_DIR$/heelCreation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postCreation.php" beforeDir="false" afterPath="$PROJECT_DIR$/postCreation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/uploaderHeel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploaderPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/uploaderPost.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +125,7 @@
       <workItem from="1611513132188" duration="8851000" />
       <workItem from="1611572657496" duration="1919000" />
       <workItem from="1611592777263" duration="7407000" />
-      <workItem from="1611600226719" duration="4066000" />
+      <workItem from="1611600226719" duration="5954000" />
     </task>
     <task id="LOCAL-00001" summary="kabba">
       <created>1606313631948</created>
@@ -410,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611604249994</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="ffs">
+      <created>1611604375870</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1611604375870</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

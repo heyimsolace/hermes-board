@@ -9,12 +9,8 @@ include __DIR__ . '/templates/page_header.php';
             <div class="col-md-8">
                 <div class="form-group">
                     <label for=postTitle">The Title of Your Post</label>
-                    <input class="form-control" name="postTitle" type="text" placeholder="Epic Title" required>
+                    <input class="form-control" name="postName" type="text" placeholder="Epic Title" required>
                 </div>
-                <div class="form-group">
-                    <label for="postImage" class="form-label">Post Image</label>
-                    <input class="form-control" name="postImage" type="file" id="postImage" required>
-                 </div>
                 <div class="form-group">
                     <label for="tags">Tags of Your desired heel</label>
                     <div class="input-group">
@@ -25,7 +21,7 @@ include __DIR__ . '/templates/page_header.php';
                 </div>
                 <div class="form-group">
                     <label for="desc">Post Input</label>
-                    <textarea class="form-control" id="formtextarea" name="postDesc" type="text" placeholder="Share your Story!" required></textarea>
+                    <textarea class="form-control" name="postContent" type="text" placeholder="Share your Story!" required></textarea>
                 </div>
                 <div class="form-group">
 

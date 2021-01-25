@@ -4,7 +4,7 @@ include __DIR__ . '/templates/page_header.php';
 ?>
 
 <div class="container postCreation">
-    <form action="uploader.php" method="post" enctype="multipart/form-data">
+    <form action="uploaderHeel.php" method="post" enctype="multipart/form-data">
         <div class="row align-items-center">
             <div class="col-md-8">
                 <div class="form-group">
