@@ -42,7 +42,7 @@ if (isset($db)) {
         $a = 0;
         foreach($posts as $post){
             $postID = $post[0];
-            include __DIR__ . '/post-j.php';
+            include __DIR__ . '/post.php';
             }
         ?>
         <div class="box row"> <!-- Position of Endbox -->
