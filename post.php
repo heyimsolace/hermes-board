@@ -26,38 +26,12 @@ if (isset($db)) {
 
 //creation of substring for better use on page
 $postContentSmall = substr($postContent, 0, 100);
-
-switch ($b) {
-    case 0:
-        $c = 4;
-        break;
-    case 1:
-        $c = 5;
-        break;
-    case 2:
-        $c = 6;
-        break;
-}
 ?>
 
 
-    <div class="row no-gutters justify-content-md-center">
-        <div class=" col-5 posts border">
-            <b><?=$postName?><br></b>
-            <?=$postContentSmall?>...<br>
-            <i>⁓ <?=$sqlUserName[0]?></i>
-            <?=$postID?>
-        </div>
-        <div class=" col-5 posts border">
-            <b><?=$postName?><br></b>
-            <?=$postContentSmall?>...<br>
-            <i>⁓ <?=$sqlUserName[0]?></i>
-            <?=$postID?>
-        </div>
-        <div class=" col-5 posts border">
-            <b><?=$postName?><br></b>
-            <?=$postContentSmall?>...<br>
-            <i>⁓ <?=$sqlUserName[0]?></i>
-            <?=$postID?>
-        </div>
-    </div>
+<div class="posts col-2 border" onclick="location.href='postContentPage.php?">
+    <b><?=$postName?><br></b>
+    <?=$postContentSmall?>...<br>
+    <i>⁓ <?=$sqlUserName[0]?></i>
+    <?=$postID?>
+</div>

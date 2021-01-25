@@ -225,4 +225,10 @@ a:active {
 }
 .posts{
     padding: 20px !important;
+    margin: 20px !important;
 }
+
+.fullRow{
+    height: 100% !important;
+}
+
