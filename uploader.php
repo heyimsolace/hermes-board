@@ -96,7 +96,7 @@ if ($uploadOk == true) {
 
             $sql->execute();
 
-            if (move_uploaded_file($_FILES["heelImage"]["tmp_name"], $filepath)) {
+            if (move_uploaded_file($_FILES["heelImage"]["tmp_name"], $target_file)) {
                 //if image uploaded, put heel in db
             } else {
                 echo "There was an error uploading your file. ";
