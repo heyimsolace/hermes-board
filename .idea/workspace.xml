@@ -10,12 +10,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="login path fix">
+    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="ffs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heelCreation.php" beforeDir="false" afterPath="$PROJECT_DIR$/heelCreation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postCreation.php" beforeDir="false" afterPath="$PROJECT_DIR$/postCreation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/uploader.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +119,9 @@
       <workItem from="1610782694809" duration="466000" />
       <workItem from="1610783189466" duration="10408000" />
       <workItem from="1611513132188" duration="8851000" />
-      <workItem from="1611572657496" duration="1072000" />
+      <workItem from="1611572657496" duration="1919000" />
+      <workItem from="1611592777263" duration="7407000" />
+      <workItem from="1611600226719" duration="4066000" />
     </task>
     <task id="LOCAL-00001" summary="kabba">
       <created>1606313631948</created>
@@ -244,7 +242,175 @@
       <option name="project" value="LOCAL" />
       <updated>1611515398242</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="login path fix">
+      <created>1611573885966</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611573885966</updated>
+    </task>
+    <task id="LOCAL-00019" summary="uploader changes">
+      <created>1611593149109</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611593149109</updated>
+    </task>
+    <task id="LOCAL-00020" summary="uploader changes">
+      <created>1611593563031</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611593563031</updated>
+    </task>
+    <task id="LOCAL-00021" summary="uploader changes">
+      <created>1611593669675</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611593669675</updated>
+    </task>
+    <task id="LOCAL-00022" summary="uploader changes">
+      <created>1611593826823</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611593826823</updated>
+    </task>
+    <task id="LOCAL-00023" summary="uploader changes">
+      <created>1611594350984</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1611594350984</updated>
+    </task>
+    <task id="LOCAL-00024" summary="uploader changes">
+      <created>1611594374688</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611594374688</updated>
+    </task>
+    <task id="LOCAL-00025" summary="uploader changes">
+      <created>1611594960864</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1611594960864</updated>
+    </task>
+    <task id="LOCAL-00026" summary="uploader changes">
+      <created>1611595502720</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1611595502720</updated>
+    </task>
+    <task id="LOCAL-00027" summary="uploader changes">
+      <created>1611595565348</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1611595565349</updated>
+    </task>
+    <task id="LOCAL-00028" summary="uploader changes">
+      <created>1611595649466</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1611595649466</updated>
+    </task>
+    <task id="LOCAL-00029" summary="uploader changes">
+      <created>1611595759401</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611595759401</updated>
+    </task>
+    <task id="LOCAL-00030" summary="uploader changes">
+      <created>1611595868436</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1611595868436</updated>
+    </task>
+    <task id="LOCAL-00031" summary="uploader changes">
+      <created>1611596937679</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1611596937679</updated>
+    </task>
+    <task id="LOCAL-00032" summary="uploader changes">
+      <created>1611597380515</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1611597380515</updated>
+    </task>
+    <task id="LOCAL-00033" summary="uploader changes">
+      <created>1611597600440</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1611597600440</updated>
+    </task>
+    <task id="LOCAL-00034" summary="uploader changes">
+      <created>1611597939375</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1611597939375</updated>
+    </task>
+    <task id="LOCAL-00035" summary="uploader changes">
+      <created>1611598784394</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1611598784394</updated>
+    </task>
+    <task id="LOCAL-00036" summary="uploader functional">
+      <created>1611599342530</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1611599342530</updated>
+    </task>
+    <task id="LOCAL-00037" summary="heel title background">
+      <created>1611599439351</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1611599439351</updated>
+    </task>
+    <task id="LOCAL-00038" summary="heel creation link">
+      <created>1611599639379</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1611599639379</updated>
+    </task>
+    <task id="LOCAL-00039" summary="heel creation link fix">
+      <created>1611599662717</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1611599662717</updated>
+    </task>
+    <task id="LOCAL-00040" summary="post update">
+      <created>1611602791132</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1611602791132</updated>
+    </task>
+    <task id="LOCAL-00041" summary="ffs">
+      <created>1611604249994</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1611604249994</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,65 +470,13 @@
     <MESSAGE value="Footer changes" />
     <MESSAGE value="Post Creation format fix" />
     <MESSAGE value="login path fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="login path fix" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="462" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606414385959">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="462" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1440.875@0.25.1440.875" timestamp="1606414385959" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1606835433235">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/-1680.32.1680.1010/1920.13.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606835433235" />
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@-1680.32.1680.1010" timestamp="1606320320200" />
-    <state x="192" y="87" key="MergeDialog" timestamp="1611513176146">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="192" y="87" key="MergeDialog/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1611513176146" />
-    <state x="144" y="98" key="MergeDialog/0.25.1440.875@0.25.1440.875" timestamp="1606417646587" />
-    <state x="354" y="220" key="MultipleFileMergeDialog" timestamp="1606417630108">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="354" y="220" key="MultipleFileMergeDialog/0.25.1440.875@0.25.1440.875" timestamp="1606417630108" />
-    <state x="720" y="429" key="NewPhpFileDialog" timestamp="1610178583205">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="720" y="429" key="NewPhpFileDialog/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1610178583205" />
-    <state x="540" y="386" key="NewPhpFileDialog/0.25.1440.875@0.25.1440.875" timestamp="1606415976860" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611515403548">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1680.32.1680.1010/1920.13.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606843805331" />
-    <state x="-1197" y="278" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@-1680.32.1680.1010" timestamp="1610786560578" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@0.0.1920.1040" timestamp="1610783514253" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1611515403548" />
-    <state x="2472" y="266" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@1920.13.1920.1040" timestamp="1607099703696" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.13.1920.1040/-1680.32.1680.1010@0.0.1920.1040" timestamp="1606497662988" />
-    <state x="414" y="238" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1606417577640" />
-    <state x="-1000" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611521764265">
-      <screen x="-1680" y="32" width="1680" height="1010" />
-    </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1680.32.1680.1010/1920.13.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606843894669" />
-    <state x="-1000" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@-1680.32.1680.1010" timestamp="1610788474346" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@0.0.1920.1040" timestamp="1610787988775" />
-    <state x="-1000" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@-1680.32.1680.1010" timestamp="1611521764265" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1611513718822" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.13.1920.1040/-1680.32.1680.1010@0.0.1920.1040" timestamp="1606494929711" />
-    <state x="-1667" y="103" width="1665" height="768" key="dock-window-1" timestamp="1611573131370">
-      <screen x="-1680" y="32" width="1680" height="1010" />
-    </state>
-    <state x="-1350" y="193" width="1366" height="936" key="dock-window-1/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@-1680.32.1680.1010" timestamp="1610787042661" />
-    <state x="-1667" y="103" width="1665" height="768" key="dock-window-1/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@-1680.32.1680.1010" timestamp="1611521986461" />
-    <state x="-1667" y="103" width="1665" height="768" key="dock-window-1/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1611573131370" />
-    <state x="658" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1607522294382">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="658" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1607522294382" />
-    <state x="-1135" y="251" width="672" height="659" key="search.everywhere.popup" timestamp="1610789740356">
-      <screen x="-1680" y="32" width="1680" height="1010" />
-    </state>
-    <state x="-1135" y="251" width="672" height="659" key="search.everywhere.popup/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@-1680.32.1680.1010" timestamp="1610789740356" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1607542742394" />
+    <MESSAGE value="uploader changes" />
+    <MESSAGE value="uploader functional" />
+    <MESSAGE value="heel title background" />
+    <MESSAGE value="heel creation link" />
+    <MESSAGE value="heel creation link fix" />
+    <MESSAGE value="post update" />
+    <MESSAGE value="ffs" />
+    <option name="LAST_COMMIT_MESSAGE" value="ffs" />
   </component>
 </project>
