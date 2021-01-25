@@ -43,7 +43,7 @@ if (isset($db)) {
         $a = 0;
         foreach($posts as $post){
             $postID = $post[0];
-            include __DIR__ . '/post.php';
+            include __DIR__ . '/post-j.php';
             }
         ?>
 
