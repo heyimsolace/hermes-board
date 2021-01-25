@@ -8,7 +8,10 @@ if (isset($db)) {
     $heel = $result->fetch();
 } else {
     echo "fuck"; }
+
+
 include __DIR__ . '/templates/page_header.php'; // HEADER
+$heelID = $heel['heelID'];
 $heelName = $heel['heelName'];
 $heelTag1 = $heel['heelTag1'];
 $heelTag2 = $heel['heelTag2'];
@@ -16,33 +19,34 @@ $heelTag3 = $heel['heelTag3'];
 $heelImgRef = $heel['heelImgRef'];
 $heelTitle = $heel['heelName'];
 $heelDesc = $heel['heelDesc'];
-
-
-
-$sql1 = "select * from post where postID=1337";
-if (isset($db)) {
-    $result1 = $db->query($sql1);
-} if ($result1) {
-    $heelPost = $result1->fetch();
-} else {
-    echo "fuck"; }
-
-$postName = $heelPost['postName'];
-$postContent = $heelPost['postContent'];
-$postCreatorID = $heelPost['postCreatorID'];
-$postVotes = $heelPost['postVotes']
-
 ?>
 
 <div class="content">
     <div class="wrapper">
-            <div class="box flex-column"> <!-- Sticky Box-->
+        <div class="flex-row">
+            <div class="box col-4"> <!-- Sticky Box-->
                 <?php include  __DIR__ . '/heelContent.php';?>
             </div>
 
-        <p class="posts container flex-column border">
-                <?=$postContent?> ⁓ <?=$postCreatorID?>
-        </p>
+        <?php
+        $sql2 = "select postID from post where heelID=$heelID";
+        if (isset($db)) {
+            $result2 = $db->query($sql2);
+        } if ($result2) {
+            $posts = $result2->fetchAll();
+        } else {
+            echo "fuck"; }
+
+        $a = 0;
+        foreach($posts as $post){
+            $b = $a % 3;
+            $a += 1;
+            $postID = $post[0];
+            include __DIR__ . '/post.php';
+            }
+        //$postID = $post;
+        //include __DIR__ . '/post.php';}
+        ?>
 
 
         <div class="box col-4"> <!-- Position of Endbox -->
@@ -53,4 +57,3 @@ $postVotes = $heelPost['postVotes']
 
 <?php
 include __DIR__ . '/templates/page_footer.php'; ?>
-
