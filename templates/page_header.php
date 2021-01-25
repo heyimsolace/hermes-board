@@ -35,6 +35,10 @@
             <button class="searchbar btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
         </form>
     </div>
+    <!-- Create heel -->
+    <a href="heelCreation.php">
+        <button type="button" class="btn btn-dark login">POST!</button>
+    </a>
     <!-- Create Post -->
     <a href="postCreation.php">
         <button type="button" class="btn btn-dark login">POST!</button>
