@@ -6,28 +6,26 @@ include __DIR__ . '/templates/page_header.php';
 <div class="container postCreation">
     <form action="uploader.php" method="post" enctype="multipart/form-data">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="form-group">
-                    <label for="heelName">Heel Name</label>
-                    <input class="form-control" name="heelName" type="text" placeholder="Epic HeelName">
+                    <label for=postTitle">Title</label>
+                    <input class="form-control" name="postTitle" type="text" placeholder="Epic Title" required>
                 </div>
                 <div class="form-group">
-                    <label for="heelImage" class="form-label">Heel Image</label>
-                    <input class="form-control" name="heelImage" type="file" id="heelImage">
+                    <label for="postImage" class="form-label">Post Image</label>
+                    <input class="form-control" name="postImage" type="file" id="postImage" required>
                  </div>
                 <div class="form-group">
                     <label for="tags">Tags</label>
                     <div class="input-group">
-                        <input class="form-control" name="heelTag1" type="text" placeholder="Your">
-                        <input class="form-control" name="heelTag2" type="text" placeholder="Tags">
-                        <input class="form-control" name="heelTag3" type="text" placeholder="Here">
+                        <input class="form-control" name="heelTag1" type="text" placeholder="Your" required>
+                        <input class="form-control" name="heelTag2" type="text" placeholder="Tags" required>
+                        <input class="form-control" name="heelTag3" type="text" placeholder="Here" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input name="about" type="hidden">
-                    <div id="editor-container">
-                        <p id="heelDesc"></p>
-                    </div>
+                    <label for="desc">Heel Description</label>
+                    <textarea class="form-control" id="formtextarea" name="postDesc" type="text" placeholder="Share your Story!" required></textarea>
                 </div>
                 <div class="form-group">
 
@@ -41,33 +39,21 @@ include __DIR__ . '/templates/page_header.php';
 </div>
 
 <script>
-    var quill = new Quill('#editor-container', {
-        modules: {
-            toolbar: [
-                ['bold', 'italic'],
-                ['link', 'blockquote', 'code-block', 'image'],
-                [{list: 'ordered'}, {list: 'bullet'}]
-            ]
-        },
-        placeholder: 'Compose an epic...',
-        theme: 'snow'
+    tinymce.init({
+        selector: 'textarea#formtextarea',
+        height: 300,
+        menubar: false,
+        plugins: [
+            'advlist autolink lists link image charmap print preview anchor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table paste code help wordcount'
+        ],
+        toolbar: 'undo redo | formatselect | ' +
+            'bold italic removeformat backcolor | alignleft aligncenter ' +
+            'alignright alignjustify | bullist numlist | ' +
+            '| link image | help',
+        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
     });
-
-    var form = document.querySelector('form');
-    form.onsubmit = function () {
-        // Populate hidden form on submit
-        var about = document.querySelector('input[name=about]');
-        about.value = JSON.stringify(quill.getContents());
-
-        console.log("Submitted", $(form).serialize(), $(form).serializeArray());
-
-        // No back end to actually submit to!
-        alert('Open the console to see the submit data!')
-        return false;
-    };
-
-    var myEditor = document.querySelector('#heelDesc')
-    var html = myEditor.children[0].innerHTML
 </script>
 
 

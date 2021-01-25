@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo_tiny.png">
 
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
+    <script src="https://cdn.tiny.cloud/1/zn90lnd2lspntbncar9avj072ocbaosr3p6bdxcxlfoku7qr/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 
 </head>
@@ -36,6 +35,10 @@
             <button class="searchbar btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
         </form>
     </div>
+    <!-- Create heel -->
+    <a href="heelCreation.php">
+        <button type="button" class="btn btn-dark login">HEEL!</button>
+    </a>
     <!-- Create Post -->
     <a href="postCreation.php">
         <button type="button" class="btn btn-dark login">POST!</button>
