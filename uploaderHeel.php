@@ -1,12 +1,12 @@
 <?php
-
+include 'templates/page_header.php';
 include 'db.php'; // DB Verbindung -- Gibt pdo als $db
 
-echo "4";
+$tmp001 = explode(".", $_FILES["heelImage"]["name"]);
+$filename = "h_" . $_POST["heelName"] . "." . end($tmp001);
 
-$relativePath = 'img/reference/';
-$target_dir = __DIR__ . $relativePath;
-$target_file = $target_dir . basename($_FILES["heelImage"]["name"]);
+$target_dir = 'img/reference/';
+$target_file = $target_dir . $filename;
 $uploadOk = true;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
@@ -78,10 +78,6 @@ try{
 
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == true) {
-    $tmp001 = explode(".", $_FILES["heelImage"]["name"]);
-    $filename = "h_" . $_POST["heelName"] . "." . end($tmp001);
-    $filepath = $relativePath . $filename;
-
     try {
         if (!empty($database) && !empty($db)) {
             $db->beginTransaction();
@@ -93,13 +89,12 @@ if ($uploadOk == true) {
             $sql->bindParam(':heelTag1', $_POST["heelTag1"]);
             $sql->bindParam(':heelTag2', $_POST["heelTag2"]);
             $sql->bindParam(':heelTag3', $_POST["heelTag3"]);
-            $sql->bindParam(':heelImgRef', $filepath);
+            $sql->bindParam(':heelImgRef', $target_file);
             $sql->bindParam(':heelDesc', $_POST["heelDesc"]);
 
             $sql->execute();
 
-            echo "Filepath: " . $filepath . " ----- ";
-            if (move_uploaded_file($_FILES["heelImage"]["name"], $filepath)) {
+            if (move_uploaded_file($_FILES["heelImage"]["tmp_name"], $target_file)) {
                 //if image uploaded, put heel in db
             } else {
                 echo "There was an error uploading your file. ";
@@ -107,23 +102,31 @@ if ($uploadOk == true) {
             }
 
             $db->commit();
-            echo "Worked :)";
+            echo "<h1>Worked :)</h1>";
+            echo "<script>window.setTimeout(function(){ window.location.href = 'heelContentPage.php?id=$heelName'; }, 5000);</script>";
         } else {
             echo "Datenbank Fehler!";
             throw new Exception('$db oder $database leer!');
         }
     } catch (PDOException $e1) {
-        echo "Error... " . $e1->getMessage();
+        echo "<h1>Error... " . $e1->getMessage() . "</h1>";
         $db->rollBack();
         $uploadOk = false;
+        echo "<script>window.setTimeout(function(){ window.location.href = 'heelCreation.php'; }, 5000);</script>";
     } catch (Exception $e2) {
-        echo "Error... " . $e2->getMessage();
+        echo "<h1>Error... " . $e2->getMessage() . "</h1>";
         $db->rollBack();
         $uploadOk = false;
+        echo "<script>window.setTimeout(function(){ window.location.href = 'heelCreation.php'; }, 5000);</script>";
     }
 
 
 } else {
-    echo "Your Heel was not created.";
+    echo "<h1>Your Heel was not created.</h1>";
+    echo "<script>window.setTimeout(function(){ window.location.href = 'heelCreation.php'; }, 5000);</script>";
 }
+
+
+
+include 'templates/page_footer.php';
 ?>

@@ -4,7 +4,7 @@ include __DIR__ . '/templates/page_header.php';
 ?>
 
 <div class="container postCreation">
-    <form action="uploader.php" method="post" enctype="multipart/form-data">
+    <form action="uploaderHeel.php" method="post" enctype="multipart/form-data">
         <div class="row align-items-center">
             <div class="col-md-8">
                 <div class="form-group">
@@ -28,33 +28,13 @@ include __DIR__ . '/templates/page_header.php';
                     <textarea class="form-control" id="formtextarea" name="heelDesc" type="text" placeholder="Your Heel Description"></textarea>
                 </div>
                 <div class="form-group">
-
                     <button class="btn btn-primary" type="submit">Post!</button>
                 </div>
             </div>
         </div>
-
-
     </form>
 </div>
 
-<script>
-    tinymce.init({
-        selector: 'textarea#formtextarea',
-        height: 300,
-        menubar: false,
-        plugins: [
-            'advlist autolink lists link image charmap print preview anchor',
-            'searchreplace visualblocks code fullscreen',
-            'insertdatetime media table paste code help wordcount'
-        ],
-        toolbar: 'undo redo | formatselect | ' +
-            'bold italic removeformat backcolor | alignleft aligncenter ' +
-            'alignright alignjustify | bullist numlist | ' +
-            '| link image | help',
-        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
-    });
-</script>
 
 
 <?php
