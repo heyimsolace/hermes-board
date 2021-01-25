@@ -1,3 +1,6 @@
+<?php
+include __DIR__ . '/templates/page_header.php';
+?>
 <form action="" method="post">
     Your Emaill: <br>
     <input type ="email" name="email" placeholder="Email"><br>
@@ -18,7 +21,7 @@ $pdo = new PDO('mysql:host=hermes-board.tk;dbname=hermes_board', 'hermes', 'herm
     echo "Connection failed" . $e->getMessage();
 }
 
-echo '<a href="login_index.php?page=Login">Login</a>';
+echo '<a href="login_index.php?page=Login">Back to Login or Register</a>';
 
 
     if(isset($_POST['send'])):
@@ -28,13 +31,19 @@ echo '<a href="login_index.php?page=Login">Login</a>';
       $password_hash =$_POST['password_hash'];
      $password_repeat =$_POST['password_repeat'];
 
-     $search_user = $pdo->prepare("Select count(userID) as c FROM user WHERE userName= :username");
-      $search_user->bindParam("username",$username);
+     $search_user = $pdo->prepare("Select count(userID) as unTest FROM user WHERE userName= :username");
+     $search_user->bindParam("username",$username);
+
+     $search_email = $pdo->prepare("Select count(userID) as eTest FROM user WHERE userEmail= :email");
+     $search_email->bindParam("email",$email);
+
 
      $search_user->execute();
      $search_result = $search_user->fetch(PDO::FETCH_ASSOC);
+     $search_email->execute();
+     $search_result2 = $search_email->fetch(PDO::FETCH_ASSOC);
 
-     if($search_result["c"]==0):
+     if($search_result["unTest"]==0 && $search_result2["eTest"]==0):
 
            if($password_hash == $password_repeat):
                $password_hash =md5($password_hash);
@@ -49,7 +58,9 @@ echo '<a href="login_index.php?page=Login">Login</a>';
              echo 'Passwords are not equal!';
          endif;
          else:
-                echo 'Username is taken!';
+                echo 'Username or Email is taken!';
          endif;
     endif;
-
+    ?>
+<?php
+include __DIR__ . '/templates/page_footer.php';?>
