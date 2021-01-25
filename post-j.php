@@ -34,9 +34,7 @@ if ($result2) {
 
 //creation of substring for better use on page
 $postContentSmall = substr($postContent, 0, 100);
-?>
-
-<div class="posts card">
+?><div class="posts card">
     <?php
     if (isset($postImgRef)) {
         echo "<img class='card-img-top' src='$postImgRef'>";

@@ -38,7 +38,6 @@ if (isset($db)) {
             </div>
         </div>
     </div>
-
         <?php
         $a = 0;
         foreach($posts as $post){
@@ -46,13 +45,8 @@ if (isset($db)) {
             include __DIR__ . '/post-j.php';
             }
         ?>
-
-
         <div class="box row"> <!-- Position of Endbox -->
             <div class="row"></div>
         </div>
-
-
-
 <?php
 include __DIR__ . '/templates/page_footer.php'; ?>
