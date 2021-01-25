@@ -108,19 +108,24 @@ if ($uploadOk == true) {
             throw new Exception('$db oder $database leer!');
         }
     } catch (PDOException $e1) {
-        echo "Error... " . $e1->getMessage();
+        echo "<h1>Error... " . $e1->getMessage() . "</h1>";
         $db->rollBack();
         $uploadOk = false;
+        echo "<script>window.location.href = 'hermes-board.tk/heelCreation.php';</script>";
     } catch (Exception $e2) {
-        echo "Error... " . $e2->getMessage();
+        echo "<h1>Error... " . $e2->getMessage() . "</h1>";
         $db->rollBack();
         $uploadOk = false;
+        echo "<script>window.location.href = 'hermes-board.tk/heelCreation.php';</script>";
     }
 
 
 } else {
-    echo "Your Heel was not created.";
+    echo "<h1>Your Heel was not created.</h1>";
+    echo "<script>window.location.href = 'hermes-board.tk/heelCreation.php';</script>";
 }
+
+
 
 include 'templates/page_footer.php';
 ?>
