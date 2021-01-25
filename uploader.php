@@ -2,7 +2,7 @@
 
 include 'db.php'; // DB Verbindung -- Gibt pdo als $db
 
-echo "2";
+echo "3";
 
 $relativePath = 'img/reference/';
 $target_dir = __DIR__ . $relativePath;
@@ -78,8 +78,8 @@ try{
 
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == true) {
-    $tmp001 = explode(".", $_FILES["heelImage"]["tmp_name"]);
-    $filename = $heelName . "." . end($tmp001);
+    $tmp001 = explode(".", $_FILES["heelImage"]["name"]);
+    $filename = "h_" . $_FILES["heelImage"]["name"] . "." . end($tmp001);
     $filepath = $relativePath . $filename;
 
     try {
@@ -99,7 +99,7 @@ if ($uploadOk == true) {
             $sql->execute();
 
             echo "Filepath: " . $filepath . " ----- ";
-            if (move_uploaded_file($_FILES["heelImage"]["tmp_name"], $filepath)) {
+            if (move_uploaded_file($_FILES["heelImage"]["name"], $filepath)) {
                 //if image uploaded, put heel in db
             } else {
                 echo "There was an error uploading your file. ";
