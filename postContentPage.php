@@ -1,18 +1,23 @@
 <?php
-include __DIR__ . '/db.php'; //INCLUDE DER DATENBANK
+include __DIR__ . '/templates/db.php'; //INCLUDE DER DATENBANK
 include __DIR__ . '/templates/page_header.php'; // HEADER
 
 
-// SPEICHERN DES AKTUELLEN HEELS ÜBER GET IN $heel
-$sql = "select * from post where postID='" . $_REQUEST['id'] . "'";
+// Erhalten der PostID über Method=GET!
+$postID = $_REQUEST['id'];
+
+// Erhalten der Daten des Posts
+$sqlPostData = "select * from post where postID=$postID";
 if (isset($db)) {
-    $result = $db->query($sql);
-} if ($result) {
-    $post = $result->fetch();
+    $resultPostData = $db->query($sqlPostData);
+}
+if ($resultPostData) {
+    $post = $resultPostData->fetch();
 } else {
-    echo "fuck"; }
+    echo "fuck";
+}
 
-
+// Definieren der Daten des Posts
 $postID = $post['postID'];
 $postName = $post['postName'];
 $postContent = $post['postContent'];
@@ -20,31 +25,32 @@ $postCreatorID = $post['postCreatorID'];
 $postVotes = $post['postVotes'];
 $heelID = $post['heelID'];
 
-$sql2 = "select * from comment where postID=$postID";
+
+// Erhalten der Kommentare
+$sqlAvailableComments = "select * from comment where postID=$postID";
 if (isset($db)) {
-    $result2 = $db->query($sql2);
-} if ($result2) {
-    $comments = $result2->fetchAll();
+    $resultAvailableComments = $db->query($sqlAvailableComments);
+}
+if ($resultAvailableComments) {
+    $comments = $resultAvailableComments->fetchAll();
 } else {
-    echo "fuck"; }
+    echo "fuck";
+}
 ?>
-<div class="row">
-    <div class="content">
-        <div class="wrapper">
-            <div class="col-4"> <!-- Sticky Box class=box-->
-                <?php include  __DIR__ . '/heelContent.php';?>
+
+<div class="row justify-content-center">
+            <div class="col-4 posts">
+                <?php include  __DIR__ . '/postContent.php';?>
             </div>
-        </div>
-    </div>
-        <?php
-        $a = 0;
-        foreach($comments as $comment){
-            $commentID = $comment[0];
-            include __DIR__ . '/comment.php';
-            }
-        ?>
-        <div class="box row"> <!-- Position of Endbox -->
-            <div class="row"></div>
+</div>
+        <div class="row justify-content-center">
+            <?php
+                //Ausgeben jedes Kommentars
+                foreach($comments as $currentComment) {
+                    $commentID = $currentComment[0];
+                    include __DIR__ . '/comment.php';
+                    }
+            ?>
         </div>
 <?php
 include __DIR__ . '/templates/page_footer.php'; ?>

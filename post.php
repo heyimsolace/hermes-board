@@ -36,7 +36,7 @@ if ($result2) {
 $postContentSmall = substr($postContent, 0, 100);
 ?>
 
-<div class="posts card" onclick="window.location.href='/postContent.php?<?=$postID?>'">
+<div class="posts card" onclick="location.href='postContentPage.php?id=<?=$postID?>';">
     <?php
     if (isset($postImgRef)) {
         echo "<img class='card-img-top' src='$postImgRef'>";

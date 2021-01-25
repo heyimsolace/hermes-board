@@ -193,17 +193,17 @@ a:active {
     margin-top: 30px;
     margin-bottom: 30px;
     padding-bottom: 30px;
+    margin-left: 20px;
+}
+
+.heelDescHeader {
+    background-color: #fddb3a !important;
 }
 .heelDesc h2 {
     margin:0 auto;
     margin-top:20px;
 }
-.heelDesc p {
-    margin:0 auto;
-    margin-top:20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 .heelContainer post h2{
     margin:0 auto;
     margin-top:20px;
@@ -233,3 +233,11 @@ a:active {
     height: 100% !important;
 }
 
+.highlighted{
+    background-color: #fddb3a !important;
+}
+.comment {
+    margin-top: 80px;
+    margin-bottom: 150px;
+    margin-inline: 20px;
+}

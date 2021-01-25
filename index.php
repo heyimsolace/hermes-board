@@ -1,7 +1,7 @@
 <?php
 $activePage = 'index';
 
-include __DIR__ . '/db.php'; // DB Verbindung -- Gibt pdo als $db
+include __DIR__ . '/templates/db.php'; // DB Verbindung -- Gibt pdo als $db
 
 // DB FETCH HEELS
 $sql = "select * from heel";

@@ -9,7 +9,7 @@
 </div>
 <!-- Description -->
 <div class="card heelDesc">
-    <h5 class="card-header">Description</h5>
+    <h5 class="card-header heelDescHeader">Description</h5>
     <div class="card-body">
         <p class="card-text"><?=$heelDesc?></p>
     </div>

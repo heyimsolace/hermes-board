@@ -1,6 +1,6 @@
 <?php
 include 'templates/page_header.php';
-include 'db.php'; // DB Verbindung -- Gibt pdo als $db
+include '/templates/db.php'; // DB Verbindung -- Gibt pdo als $db
 
 $tmp001 = explode(".", $_FILES["heelImage"]["name"]);
 $filename = "h_" . $_POST["heelName"] . "." . end($tmp001);

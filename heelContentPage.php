@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/db.php'; //INCLUDE DER DATENBANK
+include __DIR__ . '/templates/db.php'; //INCLUDE DER DATENBANK
 include __DIR__ . '/templates/page_header.php'; // HEADER
 
 
@@ -30,14 +30,10 @@ if (isset($db)) {
 } else {
     echo "fuck"; }
 ?>
-<div class="row">
-    <div class="content">
-        <div class="wrapper">
-            <div class="col-4"> <!-- Sticky Box class=box-->
+<div class="row posts justify-content-center">
                 <?php include  __DIR__ . '/heelContent.php';?>
-            </div>
-        </div>
     </div>
+<div class="row posts justify-content-center">
         <?php
         $a = 0;
         foreach($posts as $post){
@@ -45,8 +41,6 @@ if (isset($db)) {
             include __DIR__ . '/post.php';
             }
         ?>
-        <div class="box row"> <!-- Position of Endbox -->
-            <div class="row"></div>
-        </div>
+</div>
 <?php
 include __DIR__ . '/templates/page_footer.php'; ?>
