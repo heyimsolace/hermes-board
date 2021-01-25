@@ -2,7 +2,7 @@
 
 include 'db.php'; // DB Verbindung -- Gibt pdo als $db
 
-echo "3";
+echo "4";
 
 $relativePath = 'img/reference/';
 $target_dir = __DIR__ . $relativePath;
@@ -79,7 +79,7 @@ try{
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == true) {
     $tmp001 = explode(".", $_FILES["heelImage"]["name"]);
-    $filename = "h_" . $_FILES["heelImage"]["name"] . "." . end($tmp001);
+    $filename = "h_" . $_POST["heelName"] . "." . end($tmp001);
     $filepath = $relativePath . $filename;
 
     try {
