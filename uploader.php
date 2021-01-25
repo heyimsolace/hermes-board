@@ -77,7 +77,7 @@ try{
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == true) {
     $tmp001 = explode(".", $_FILES["heelImage"]["tmp_name"]);
-    $filename = $_POST["heelName"] . "_" . round(microtime(true)) . "." . end($tmp001);
+    $filename = $heelName . "." . end($tmp001);
     $filepath = $relativePath . $filename;
 
     try {
@@ -96,6 +96,7 @@ if ($uploadOk == true) {
 
             $sql->execute();
 
+            echo $filepath;
             if (move_uploaded_file($_FILES["heelImage"]["tmp_name"], $filepath)) {
                 //if image uploaded, put heel in db
             } else {
