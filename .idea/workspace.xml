@@ -2,12 +2,19 @@
 <project version="4">
   <component name="BranchesTreeState">
     <expand />
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="Uploader-fix 3">
+    <list default="true" id="306f588b-325a-4156-ba81-a11ca9839e68" name="Default Changelist" comment="login path fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heel.php" beforeDir="false" afterPath="$PROJECT_DIR$/heel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heelCreation.php" beforeDir="false" afterPath="$PROJECT_DIR$/heelCreation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postCreation.php" beforeDir="false" afterPath="$PROJECT_DIR$/postCreation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/page_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page_header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/uploader.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +32,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="feature/template-paths" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/template-paths" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\forum" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\css" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\img" />
     </key>
@@ -63,6 +87,16 @@
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\js" />
       <recent name="D:\Stuff\Backup stuff\Wichtiges Zeug\Uni\Internetanwendungen\code\hermes-board\css" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="uploader.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hermes-board/hermes-board/uploader.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.uploader.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,6 +116,14 @@
       <workItem from="1606817118858" duration="926000" />
       <workItem from="1606840727060" duration="2991000" />
       <workItem from="1607099670670" duration="836000" />
+      <workItem from="1607542419156" duration="3913000" />
+      <workItem from="1609792634445" duration="4985000" />
+      <workItem from="1609871456839" duration="1155000" />
+      <workItem from="1610177917179" duration="12222000" />
+      <workItem from="1610782694809" duration="466000" />
+      <workItem from="1610783189466" duration="10408000" />
+      <workItem from="1611513132188" duration="8851000" />
+      <workItem from="1611572657496" duration="1072000" />
     </task>
     <task id="LOCAL-00001" summary="kabba">
       <created>1606313631948</created>
@@ -174,7 +216,35 @@
       <option name="project" value="LOCAL" />
       <updated>1607099695126</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Header fix">
+      <created>1610183749623</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610183749623</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Footer changes">
+      <created>1610783507816</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610783507816</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Post Creation format fix">
+      <created>1610786551100</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610786551100</updated>
+    </task>
+    <task id="LOCAL-00017" summary="login path fix">
+      <created>1611515398242</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611515398242</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +300,11 @@
     <MESSAGE value="css?" />
     <MESSAGE value="Dropdown stuff" />
     <MESSAGE value="Rad neu erfunden" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rad neu erfunden" />
+    <MESSAGE value="Header fix" />
+    <MESSAGE value="Footer changes" />
+    <MESSAGE value="Post Creation format fix" />
+    <MESSAGE value="login path fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="login path fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="462" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606414385959">
@@ -242,36 +316,53 @@
     </state>
     <state x="1220" y="278" key="FileChooserDialogImpl/-1680.32.1680.1010/1920.13.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606835433235" />
     <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@-1680.32.1680.1010" timestamp="1606320320200" />
-    <state x="144" y="98" key="MergeDialog" timestamp="1606417646587">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="192" y="87" key="MergeDialog" timestamp="1611513176146">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="192" y="87" key="MergeDialog/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1611513176146" />
     <state x="144" y="98" key="MergeDialog/0.25.1440.875@0.25.1440.875" timestamp="1606417646587" />
     <state x="354" y="220" key="MultipleFileMergeDialog" timestamp="1606417630108">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="354" y="220" key="MultipleFileMergeDialog/0.25.1440.875@0.25.1440.875" timestamp="1606417630108" />
-    <state x="540" y="386" key="NewPhpFileDialog" timestamp="1606415976860">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="720" y="429" key="NewPhpFileDialog" timestamp="1610178583205">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="720" y="429" key="NewPhpFileDialog/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1610178583205" />
     <state x="540" y="386" key="NewPhpFileDialog/0.25.1440.875@0.25.1440.875" timestamp="1606415976860" />
-    <state x="2472" y="266" key="Vcs.Push.Dialog.v2" timestamp="1607099703696">
-      <screen x="1920" y="13" width="1920" height="1040" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611515403548">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1680.32.1680.1010/1920.13.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606843805331" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606334831902" />
+    <state x="-1197" y="278" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@-1680.32.1680.1010" timestamp="1610786560578" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@0.0.1920.1040" timestamp="1610783514253" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1611515403548" />
     <state x="2472" y="266" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@1920.13.1920.1040" timestamp="1607099703696" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.13.1920.1040/-1680.32.1680.1010@0.0.1920.1040" timestamp="1606497662988" />
     <state x="414" y="238" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1606417577640" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606843894669">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1000" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611521764265">
+      <screen x="-1680" y="32" width="1680" height="1010" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1680.32.1680.1010/1920.13.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606843894669" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606817130725" />
+    <state x="-1000" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@-1680.32.1680.1010" timestamp="1610788474346" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@0.0.1920.1040" timestamp="1610787988775" />
+    <state x="-1000" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@-1680.32.1680.1010" timestamp="1611521764265" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1611513718822" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.13.1920.1040/-1680.32.1680.1010@0.0.1920.1040" timestamp="1606494929711" />
-    <state x="973" y="0" width="954" height="1047" key="dock-window-1" timestamp="1606321701787">
+    <state x="-1667" y="103" width="1665" height="768" key="dock-window-1" timestamp="1611573131370">
+      <screen x="-1680" y="32" width="1680" height="1010" />
+    </state>
+    <state x="-1350" y="193" width="1366" height="936" key="dock-window-1/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@-1680.32.1680.1010" timestamp="1610787042661" />
+    <state x="-1667" y="103" width="1665" height="768" key="dock-window-1/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@-1680.32.1680.1010" timestamp="1611521986461" />
+    <state x="-1667" y="103" width="1665" height="768" key="dock-window-1/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1611573131370" />
+    <state x="658" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1607522294382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@-1680.32.1680.1010" timestamp="1606320035920" />
-    <state x="973" y="0" width="954" height="1047" key="dock-window-1/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1606321701787" />
+    <state x="658" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1607522294382" />
+    <state x="-1135" y="251" width="672" height="659" key="search.everywhere.popup" timestamp="1610789740356">
+      <screen x="-1680" y="32" width="1680" height="1010" />
+    </state>
+    <state x="-1135" y="251" width="672" height="659" key="search.everywhere.popup/0.0.1920.1040/-1680.32.1680.1010/1920.0.1920.1040@-1680.32.1680.1010" timestamp="1610789740356" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.32.1680.1010/1920.13.1920.1040@0.0.1920.1040" timestamp="1607542742394" />
   </component>
 </project>
