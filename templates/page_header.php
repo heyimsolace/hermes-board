@@ -37,7 +37,7 @@
     </div>
     <!-- Create heel -->
     <a href="heelCreation.php">
-        <button type="button" class="btn btn-dark login">POST!</button>
+        <button type="button" class="btn btn-dark login">HEEL!</button>
     </a>
     <!-- Create Post -->
     <a href="postCreation.php">
