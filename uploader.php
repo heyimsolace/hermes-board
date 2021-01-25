@@ -2,7 +2,7 @@
 
 include 'db.php'; // DB Verbindung -- Gibt pdo als $db
 
-$target_dir = '/img/reference/';
+$target_dir = __DIR__ . '/img/reference/';
 $target_file = $target_dir . basename($_FILES["heelImage"]["name"]);
 $uploadOk = true;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -13,7 +13,7 @@ $heelName = "h/" . $_POST["heelName"];
 
 // Check if image file is a actual image or fake image
 if (isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["heelImage"]["tmp_name"]);
+    $check = getimagesize($_FILES["heelImage"]["name"]);
     if ($check !== false) {
         echo "File is an image - " . $check["mime"] . ". ";
         $uploadOk = false;
@@ -22,13 +22,6 @@ if (isset($_POST["submit"])) {
         $uploadOk = false;
     }
 }
-
-// Check if file already exists
-if (file_exists($target_file)) {
-    echo "Sorry, file already exists. ";
-    $uploadOk = false;
-}
-
 // Check file size
 if ($_FILES["heelImage"]["size"] > 70000000) {
     echo "Sorry, your file is too large. ";
@@ -89,8 +82,6 @@ if ($uploadOk == true) {
     try {
         if (!empty($database) && !empty($db)) {
             $db->beginTransaction();
-
-
 
             $sql = $db->prepare("INSERT INTO heel(heelName, heelTag1, heelTag2, heelTag3, heelImgRef, heelDesc)
                  values (:heelName, :heelTag1, :heelTag2, :heelTag3, :heelImgRef, :heelDesc)");
