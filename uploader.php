@@ -1,8 +1,6 @@
 <?php
-
+include 'templates/page_header.php';
 include 'db.php'; // DB Verbindung -- Gibt pdo als $db
-
-echo "7";
 
 $tmp001 = explode(".", $_FILES["heelImage"]["name"]);
 $filename = "h_" . $_POST["heelName"] . "." . end($tmp001);
@@ -96,9 +94,6 @@ if ($uploadOk == true) {
 
             $sql->execute();
 
-            echo "Filepath: " . $target_file . " ----- ";
-
-            echo "File: " . $_FILES["heelImage"]["name"] . " --------- ";
             if (move_uploaded_file($_FILES["heelImage"]["tmp_name"], $target_file)) {
                 //if image uploaded, put heel in db
             } else {
@@ -126,4 +121,6 @@ if ($uploadOk == true) {
 } else {
     echo "Your Heel was not created.";
 }
+
+include 'templates/page_footer.php';
 ?>
