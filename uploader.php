@@ -75,7 +75,7 @@ try{
 
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == true) {
-    $tmp001 = explode(".", $_FILES["heelImage"]["name"]);
+    $tmp001 = explode(".", $_FILES["heelImage"]["tmp_name"]);
     $filename = $_POST["heelName"] . "_" . round(microtime(true)) . "." . end($tmp001);
     $filepath = $target_dir . $filename;
 
