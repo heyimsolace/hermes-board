@@ -2,7 +2,7 @@
 
 include 'db.php'; // DB Verbindung -- Gibt pdo als $db
 
-$target_dir = __DIR__ . '/img/reference/';
+$target_dir = __DIR__ . 'img/reference/';
 $target_file = $target_dir . basename($_FILES["heelImage"]["name"]);
 $uploadOk = true;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
