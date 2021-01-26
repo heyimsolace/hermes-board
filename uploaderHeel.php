@@ -10,6 +10,10 @@ $target_file = $target_dir . $filename;
 $uploadOk = true;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
+$heeltag1 = strtolower($_POST['heelTag1']);
+$heeltag2 = strtolower($_POST['heelTag2']);
+$heeltag3 = strtolower($_POST['heelTag3']);
+
 $file = $_FILES["heelImage"]["name"];
 
 $heelName = "h/" . $_POST["heelName"];
@@ -48,6 +52,7 @@ try{
 
         foreach ($sql->fetchAll() as $heels) {
 
+
             $existingHeelTags = array(
                 "tag1" => $heels["heelTag1"],
                 "tag2" => $heels["heelTag2"],
@@ -58,7 +63,7 @@ try{
                 echo "Heelname already Exists.";
                 break;
             }
-            if (in_array($_POST["heelTag1"], $existingHeelTags) && in_array($_POST["heelTag2"], $existingHeelTags) && in_array($_POST["heelTag3"], $existingHeelTags)){
+            if (in_array($heelTag1, $existingHeelTags) && in_array($heelTag2, $existingHeelTags) && in_arra($heelTag3, $existingHeelTags)){
                 $uploadOk = false;
                 echo "Combination of tags already Taken.";
                 break;
@@ -86,9 +91,9 @@ if ($uploadOk == true) {
                  values (:heelName, :heelTag1, :heelTag2, :heelTag3, :heelImgRef, :heelDesc)");
 
             $sql->bindParam(':heelName', $heelName);
-            $sql->bindParam(':heelTag1', $_POST["heelTag1"]);
-            $sql->bindParam(':heelTag2', $_POST["heelTag2"]);
-            $sql->bindParam(':heelTag3', $_POST["heelTag3"]);
+            $sql->bindParam(':heelTag1', strtolower($_POST["heelTag1"]));
+            $sql->bindParam(':heelTag2', strtolower($_POST["heelTag2"]));
+            $sql->bindParam(':heelTag3', strtolower($_POST["heelTag3"]));
             $sql->bindParam(':heelImgRef', $target_file);
             $sql->bindParam(':heelDesc', $_POST["heelDesc"]);
 

@@ -10,6 +10,11 @@ $heelName;
 $heelID;
 $postCreatorID = $_POST['userID'];
 
+$heeltag1 = strtolower($_POST['heelTag1']);
+$heeltag2 = strtolower($_POST['heelTag2']);
+$heeltag3 = strtolower($_POST['heelTag3']);
+
+
 
 // Check for duplicates
 try{
@@ -25,7 +30,7 @@ try{
                 "tag2" => $heels["heelTag2"],
                 "tag3" => $heels["heelTag3"]
             );
-            if (in_array($_POST["heelTag1"], $existingHeelTags) && in_array($_POST["heelTag2"], $existingHeelTags) && in_array($_POST["heelTag3"], $existingHeelTags)){
+            if (in_array($heelTag1, $existingHeelTags) && in_array($heelTag2, $existingHeelTags) && in_array($heelTag3, $existingHeelTags)){
                 $heelExists = true;
                 $heelID = $heels['heelID'];
                 $heelName = $heels['heelName'];
