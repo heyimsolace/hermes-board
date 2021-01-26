@@ -4,11 +4,11 @@ include '/templates/db.php'; // DB Verbindung -- Gibt pdo als $db
 
 $target_dir = 'img/reference/';
 
-$uploadOk = true;
 $heelExists = false;
 
 $heelName;
 $heelID;
+$postCreatorID;
 
 
 // Check for duplicates
@@ -38,26 +38,26 @@ try{
 } catch (PDOException $e1) {
     echo "Error... " . $e1->getMessage();
     $db->rollBack();
-    $uploadOk = false;
+    $heelExists = false;
 } catch (Exception $e2) {
     echo "Error... " . $e2->getMessage();
-    $uploadOk = false;
+    $heelExists = false;
     $db->rollBack();
 }
 
-// Check if $uploadOk is set to 0 by an error
-if ($uploadOk == true && $heelExists == true) {
+if ($heelExists == true) {
 
     try {
         if (!empty($database) && !empty($db)) {
             $db->beginTransaction();
 
-            $sql = $db->prepare("INSERT INTO post(postName, postContent, heelID)
-                 values (:postName, :postContent, :heelID)");
+            $sql = $db->prepare("INSERT INTO post(postName, postContent, heelID, postCreatorID)
+                 values (:postName, :postContent, :heelID, :postCreatorID)");
 
             $sql->bindParam(':postName', $_POST['postName']);
             $sql->bindParam(':postContent', $_POST["postContent"]);
             $sql->bindParam(':heelID', $heelID);
+            $sql->bindParam(':postCreatorID', $postCreatorID);
 
             $sql->execute();
 
@@ -71,17 +71,15 @@ if ($uploadOk == true && $heelExists == true) {
     } catch (PDOException $e1) {
         echo "<h1>Error... " . $e1->getMessage() . "</h1>";
         $db->rollBack();
-        $uploadOk = false;
         echo "<script>window.setTimeout(function(){ window.location.href = 'postCreation.php'; }, 5000);</script>";
     } catch (Exception $e2) {
         echo "<h1>Error... " . $e2->getMessage() . "</h1>";
         $db->rollBack();
-        $uploadOk = false;
         echo "<script>window.setTimeout(function(){ window.location.href = 'postCreation.php'; }, 5000);</script>";
     }
 
 } else {
-    echo "<h1>Your Heel was not created.</h1>";
+    echo "<h1>Your post was not created.</h1>";
     echo "<script>window.setTimeout(function(){ window.location.href = 'postCreation.php'; }, 5000);</script>";
 }
 include 'templates/page_footer.php';

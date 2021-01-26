@@ -16,18 +16,20 @@ $postName = $heelPost['postName'];
 $postContent = $heelPost['postContent'];
 $postCreatorID = $heelPost['postCreatorID'];
 $postVotes = $heelPost['postVotes'];
+$postID = $heelPost['postID'];
 if (isset($heelPost['postImgRef'])) {
     $postImgRef = $heelPost['postImgRef'];
 }
 
 
 //Selection of userName
-$sqlUserName = "select u.username from user u join post p on u.userID=p.postCreatorID where postID=1337";
+$sql2 = "select u.userName from user u join post p on u.userID=p.postCreatorID where postID=$postID";
 if (isset($db)) {
-    $result2 = $db->query($sqlUserName);
+    $result2 = $db->query($sql2);
 }
 if ($result2) {
-    $sqlUserName = $result2->fetch();
+    $sqlUserName = $result2->fetchAll();
+
 } else {
     echo "fuck";
 }
@@ -45,6 +47,6 @@ $postContentSmall = substr($postContent, 0, 100);
     <div class="card-body">
         <p class="card-text"><?= $postContentSmall?> ...</p>
         <br/>
-        <i> ~ <?=$sqlUserName[0]?></i>
+        <i> ~ <?=$sqlUserName[0][0]?></i>
     </div>
 </div>
