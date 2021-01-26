@@ -3,8 +3,8 @@
 <div class="card heel" onclick="location.href='heelContentPage.php?id=<?=$heelTitle?>';">
     <img class="card-img-top" src="<?=$heelImgRef?>" alt="Card image">
     <div class="card-img-overlay">
-        <h4 class="card-title"><?=$heelTitle?></h4>
-        <p class="card-text"><?=$heelTag1?>,<?=$heelTag2?>,<?=$heelTag3?></p>
+        <h4 class="card-title"><span><?=$heelTitle?></span></h4>
+        <p class="card-text"><span><?=$heelTag1?>,<?=$heelTag2?>,<?=$heelTag3?></span></p>
     </div>
 </div>
 <!-- Description -->

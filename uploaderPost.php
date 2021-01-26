@@ -5,16 +5,13 @@ include __DIR__ . '/templates/db.php'; // DB Verbindung -- Gibt pdo als $db
 $target_dir = 'img/reference/';
 
 $heelExists = false;
-echo $_POST['userID'];
 $heelName;
 $heelID;
 $postCreatorID = $_POST['userID'];
 
-$heeltag1 = strtolower($_POST['heelTag1']);
-$heeltag2 = strtolower($_POST['heelTag2']);
-$heeltag3 = strtolower($_POST['heelTag3']);
-
-
+$heelTag1 = strtolower($_POST['heelTag1']);
+$heelTag2 = strtolower($_POST['heelTag2']);
+$heelTag3 = strtolower($_POST['heelTag3']);
 
 // Check for duplicates
 try{
