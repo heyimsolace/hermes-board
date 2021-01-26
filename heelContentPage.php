@@ -1,6 +1,6 @@
 <?php
-include __DIR__ . '/templates/db.php'; //INCLUDE DER DATENBANK
-include __DIR__ . '/templates/page_header.php'; // HEADER
+include __DIR__ . '/templates/page_header.php';
+include __DIR__ . '/templates/db.php'; // DB Verbindung -- Gibt pdo als $db
 
 
 // SPEICHERN DES AKTUELLEN HEELS ÜBER GET IN $heel

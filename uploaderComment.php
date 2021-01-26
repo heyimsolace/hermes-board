@@ -1,6 +1,6 @@
 <?php
-include 'templates/page_header.php';
-include '/templates/db.php'; // DB Verbindung -- Gibt pdo als $db
+include __DIR__ . '/templates/page_header.php';
+include __DIR__ . '/templates/db.php'; // DB Verbindung -- Gibt pdo als $db
 
 $postExists = false;
 

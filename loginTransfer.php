@@ -1,6 +1,6 @@
 <?php
 
-include "templates/page_header.php";
+include __DIR__ . '/templates/page_header.php';
 try {
     $pdo = new PDO('mysql:host=hermes-board.tk;dbname=hermes_board', 'hermes', 'hermes', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 } catch (PDOException $e) {
