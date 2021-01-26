@@ -25,6 +25,9 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- Searchbar -->
+    <div class="collapse navbar-collapse ml-5" id="navbarNav">
+    </div>
     <!-- Create heel -->
     <a href="login.php?dest=heel" class="float-right">
         <button type="button" class="btn btn-dark login">HEEL!</button>
