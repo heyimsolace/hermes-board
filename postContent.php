@@ -23,7 +23,7 @@ echo "fuck";
         <i> ~ <?=$sqlUserName[0]?></i>
         <form action="login.php?dest=comment" method="post">
             <input type="hidden" value="<?=$postID?>" name="postID">
-            <button type="submit" class="btn btn-link">Comment</button>
+            <button type="submit" class="btn btn-dark commentBtn">Comment</button>
         </form>
     </div>
 </div>

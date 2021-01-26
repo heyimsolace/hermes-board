@@ -1,21 +1,8 @@
 <?php
 $activePage = 'index';
 include __DIR__ . '/templates/page_header.php';
-
-if (!isset($_POST['login'])) {
-    echo "<script>window.setTimeout(function(){ window.location.href = 'index.php'; },10);</script>";
-}
-
-$sqlUserName = "select * from heel where heelID=$";
-if (isset($db)) {
-    $result2 = $db->query($sqlUserName);
-}
-if ($result2) {
-    $sqlUserName = $result2->fetch();
-} else {
-    echo "fuck";
-}
 ?>
+
 <div class="container postCreation">
     <form action="uploaderPost.php" method="post" enctype="multipart/form-data">
         <div class="row align-items-center">
@@ -35,7 +22,7 @@ if ($result2) {
                 <div class="form-group">
                     <label for="desc">Post Input</label>
                     <textarea class="form-control" name="postContent" type="text" placeholder="Share your Story!" required></textarea>
-                    <input type="hidden" value="<?=$_POST['userID']?>" name="userID">
+                    <input type="hidden" value="<?=$_SESSION['user']?>">
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary" type="submit">Post!</button>
@@ -44,6 +31,8 @@ if ($result2) {
         </div>
     </form>
 </div>
+
+
 <?php
 include __DIR__ . '/templates/page_footer.php'; ?>
 

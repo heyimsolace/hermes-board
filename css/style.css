@@ -46,13 +46,16 @@ html {
     object-fit: cover;
     object-position: 20% 10%; /* try 20px 10px */
     filter: hue-rotate(240deg) blur(50) grayscale(50%);
-    -webkit-filter: blur(1pt);
+    -webkit-filter: blur(1px);
 }
 .heel span {
-    background-color: rgba(150, 150, 150, 0.5);
+    background-color: rgba(150, 150, 150, 0.2);
     padding: 5px;
     border-radius: 5px;
-    text-shadow: 2px 2px #3c3c3c;
+    -webkit-text-stroke-width: 1rm;
+    -webkit-text-stroke-color: #fddb3a;
+    text-shadow: 1px 1px #3c3c3c;
+
 
 }
 
@@ -240,4 +243,7 @@ a:active {
     margin-top: 80px;
     margin-bottom: 150px;
     margin-inline: 20px;
+}
+.commentBtn {
+    margin-left: 80%;
 }
