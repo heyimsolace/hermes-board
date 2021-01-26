@@ -25,19 +25,12 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- Searchbar -->
-    <div class="collapse navbar-collapse ml-5" id="navbarNav">
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="searchbar btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
-        </form>
-    </div>
     <!-- Create heel -->
-    <a href="login.php?dest=heel">
+    <a href="login.php?dest=heel" class="float-right">
         <button type="button" class="btn btn-dark login">HEEL!</button>
     </a>
     <!-- Create Post -->
-    <a href="login.php?dest=post">
+    <a href="login.php?dest=post" class="float-right">
         <button type="button" class="btn btn-dark login">POST!</button>
     </a>
 </nav>

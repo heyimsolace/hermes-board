@@ -8,12 +8,13 @@ $commentCreatorID = $currentComment['commentCreatorID'];
 $commentVotes = $currentComment['commentVotes'];
 
 //Selection of userName
-$sqlUserName = "select u.username from user u join comment c on u.userID=c.commentCreatorID where commentID=$commentID";
+$sql2 = "select userName from user where userID='$commentCreatorID'";
 if (isset($db)) {
-    $result2 = $db->query($sqlUserName);
+    $result2 = $db->query($sql2);
 }
 if ($result2) {
     $sqlUserName = $result2->fetch();
+
 } else {
     echo "fuck";
 }
@@ -22,6 +23,6 @@ if ($result2) {
     <div class="card-body posts">
         <p class="card-text"><?= $commentContent?></p>
         <br/>
-        <i> ~ <?=$sqlUserName[0]?></i>
+        <i> ~ <?=$sqlUserName['userName']?></i>
     </div>
 </div>

@@ -25,7 +25,7 @@ if (!isset($_POST['login'])) {
                 <div class="form-group">
                     <label for="desc">Post Input</label>
                     <textarea class="form-control" name="postContent" type="text" placeholder="Share your Story!" required></textarea>
-                    <input type="hidden" value="<?=$_SESSION['user']?>">
+                    <input type="hidden" value="<?=$_POST['userID']?>" name="userID">
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary" type="submit">Post!</button>

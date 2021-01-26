@@ -23,8 +23,7 @@ $search_user->execute();
 if ($search_user->rowCount() == 1) {
     $search_objekt = $search_user->fetchObject();
     foreach ($search_objekt as $item) {
-        $_SESSION['user'] = $search_objekt->userID;
-        $userID = $_SESSION['user'];
+        $userID = $search_objekt->userID;
         echo "<h2>Login Successfull</h2>";
         echo "<form id='form' action='$destination' method='post'>
                          <input value='true' type='hidden' name='login'>
@@ -34,7 +33,7 @@ if ($search_user->rowCount() == 1) {
                          }
                         echo "</form>";
         echo "<script type='text/javascript'>
-                        window.setTimeout(function() { document.getElementById('form').submit()},3000);
+                        window.setTimeout(function() { document.getElementById('form').submit()},2000);
                         </script>";
     }
 } else {

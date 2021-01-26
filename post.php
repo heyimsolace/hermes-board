@@ -10,7 +10,6 @@ if ($result1) {
 } else {
     echo "fuck";
 }
-
 //Definition of Variables
 $postName = $heelPost['postName'];
 $postContent = $heelPost['postContent'];
@@ -21,15 +20,13 @@ if (isset($heelPost['postImgRef'])) {
     $postImgRef = $heelPost['postImgRef'];
 }
 
-
 //Selection of userName
-$sql2 = "select u.userName from user u join post p on u.userID=p.postCreatorID where postID=$postID";
+$sql2 = "select userName from user where userID='$postCreatorID'";
 if (isset($db)) {
     $result2 = $db->query($sql2);
 }
 if ($result2) {
-    $sqlUserName = $result2->fetchAll();
-
+    $sqlUserName = $result2->fetch();
 } else {
     echo "fuck";
 }
@@ -47,6 +44,6 @@ $postContentSmall = substr($postContent, 0, 100);
     <div class="card-body">
         <p class="card-text"><?= $postContentSmall?> ...</p>
         <br/>
-        <i> ~ <?=$sqlUserName[0][0]?></i>
+        <i> ~ <?=$sqlUserName[0]?></i>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <?php
 //Selection of userName
-$sqlUserName = "select u.username from user u join post p on u.userID=p.postCreatorID where postID=1337";
+$sqlUserName = "select u.username from user u join post p on u.userID=p.postCreatorID where postID=$postID";
 if (isset($db)) {
 $result2 = $db->query($sqlUserName);
 }
@@ -22,8 +22,8 @@ echo "fuck";
         <br/>
         <i> ~ <?=$sqlUserName[0]?></i>
         <form action="login.php?dest=comment" method="post">
+            <input type="hidden" value="<?=$postID?>" name="postID">
             <button type="submit" class="btn btn-link">Comment</button>
-            <input type="hidden" value="<?$postID?>" name="postID">
         </form>
     </div>
 </div>

@@ -6,6 +6,9 @@ if ($_REQUEST['dest'] == 'post') {
 } elseif ($_REQUEST['dest'] == 'heel') {
     $destination = 'heelCreation.php';
 } elseif ($_REQUEST['dest'] == 'comment') {
+    if (isset($_POST['postID'])){
+        $postID = $_POST['postID'];
+    }
     $destination = 'commentCreation.php';
 }
 
@@ -22,8 +25,7 @@ if ($_REQUEST['dest'] == 'post') {
                     <label for="password">Your Email or Username</label>
                     <input class="form-control" type="password" name="password" placeholder="Password">
                     <input type="hidden" value="<?= $destination ?>" name="destination">
-                    <?php if (isset($_POST['postID']) && $destination == 'comment') {
-                        $postID = $_POST['postID'];
+                    <?php if (isset($postID)) {
                         echo "<input type='hidden' value='$postID' name='postID'>";
                     } ?>
                 </div>

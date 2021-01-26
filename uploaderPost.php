@@ -5,10 +5,10 @@ include __DIR__ . '/templates/db.php'; // DB Verbindung -- Gibt pdo als $db
 $target_dir = 'img/reference/';
 
 $heelExists = false;
-
+echo $_POST['userID'];
 $heelName;
 $heelID;
-$postCreatorID = $_SESSION['user'];
+$postCreatorID = $_POST['userID'];
 
 
 // Check for duplicates

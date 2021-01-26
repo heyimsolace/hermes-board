@@ -14,8 +14,8 @@ $postID = $_POST['postID'];
             <div class="col-md-8">
                 <div class="form-group">
                     <label for="desc">Comment:</label>
-                    <textarea class="form-control" name="postContent" type="text" placeholder="Share your Story!" required></textarea>
-                    <input type="hidden" value="<?=$_SESSION['user']?>" name="userID">
+                    <textarea class="form-control" name="commentContent" type="text" placeholder="Share your Story!" required></textarea>
+                    <input type="hidden" value="<?=$_POST['userID']?>" name="userID">
                     <input type="hidden" value="<?=$postID?>" name="postID">
                 </div>
                 <div class="form-group">
