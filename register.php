@@ -1,9 +1,7 @@
 <?php
 include __DIR__ . '/templates/page_header.php';
 ?>
-<div class="container">
-    <div class="row align-items-center">
-        <div class="col-md-6">
+<div class="container col-md-4">
             <form action="" method="post">
                 <div class="form-group">
                     <label for="emails">Your Email:</label>
@@ -33,8 +31,6 @@ include __DIR__ . '/templates/page_header.php';
                     <button class="btn btn-primary">Go Back!</button>
                 </form>
             </div>
-        </div>
-    </div>
 </div>
 
 

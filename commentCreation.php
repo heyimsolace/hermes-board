@@ -8,10 +8,8 @@ if (!isset($_POST['login'])) {
 
 $postID = $_POST['postID'];
 ?>
-<div class="container commentCreation">
+<div class="container commentCreation col-md-6">
     <form action="uploaderComment.php" method="post" enctype="multipart/form-data">
-        <div class="row align-items-center">
-            <div class="col-md-8">
                 <div class="form-group">
                     <label for="desc">Comment:</label>
                     <textarea class="form-control" name="commentContent" type="text" placeholder="Share your Story!" required></textarea>

@@ -6,17 +6,15 @@ include __DIR__ . '/templates/page_header.php';
 
 ?>
 
-<div class="container postCreation">
+<div class="container postCreation col-md-6">
     <form action="uploaderHeel.php" method="post" enctype="multipart/form-data">
-        <div class="row align-items-center">
-            <div class="col-md-8">
                 <div class="form-group">
                     <label for="heelName">Heel Name</label>
                     <input class="form-control" name="heelName" type="text" placeholder="Epic HeelName">
                 </div>
                 <div class="form-group">
                     <label for="heelImage" class="form-label">Heel Image</label>
-                    <input class="form-control" name="heelImage" type="file" id="heelImage">
+                    <input class="form-control-file" name="heelImage" type="file" id="heelImage">
                  </div>
                 <div class="form-group">
                     <label for="tags">Tags</label>
@@ -33,8 +31,6 @@ include __DIR__ . '/templates/page_header.php';
                 <div class="form-group">
                     <button class="btn btn-primary" type="submit">Post!</button>
                 </div>
-            </div>
-        </div>
     </form>
 </div>
 

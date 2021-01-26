@@ -3,10 +3,8 @@ $activePage = 'index';
 include __DIR__ . '/templates/page_header.php';
 ?>
 
-<div class="container postCreation">
+<div class="container postCreation col-md-6">
     <form action="uploaderPost.php" method="post" enctype="multipart/form-data">
-        <div class="row align-items-center">
-            <div class="col-md-8">
                 <div class="form-group">
                     <label for=postTitle">The Title of Your Post</label>
                     <input class="form-control" name="postName" type="text" placeholder="Epic Title" required>
@@ -27,8 +25,6 @@ include __DIR__ . '/templates/page_header.php';
                 <div class="form-group">
                     <button class="btn btn-primary" type="submit">Post!</button>
                 </div>
-            </div>
-        </div>
     </form>
 </div>
 
