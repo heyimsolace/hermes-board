@@ -75,7 +75,7 @@ if (isset($_POST['send'])){
                 echo 'Your account is now Registered';
             endif;
         else:
-            echo "<h2>Passwords are not equal!</h2>";
+            echo "<h2>Email or Passwords are not equal!</h2>";
         endif;
     else:
         echo "<h2>Username or Email is taken!</h2>";

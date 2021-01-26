@@ -5,6 +5,16 @@ include __DIR__ . '/templates/page_header.php';
 if (!isset($_POST['login'])) {
     echo "<script>window.setTimeout(function(){ window.location.href = 'index.php'; },10);</script>";
 }
+
+$sqlUserName = "select * from heel where heelID=$";
+if (isset($db)) {
+    $result2 = $db->query($sqlUserName);
+}
+if ($result2) {
+    $sqlUserName = $result2->fetch();
+} else {
+    echo "fuck";
+}
 ?>
 <div class="container postCreation">
     <form action="uploaderPost.php" method="post" enctype="multipart/form-data">

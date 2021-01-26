@@ -1,6 +1,9 @@
 <?php
 $activePage = 'index';
 include __DIR__ . '/templates/page_header.php';
+
+
+
 ?>
 
 <div class="container postCreation">
