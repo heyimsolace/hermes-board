@@ -16,7 +16,7 @@
                 <!-- Links -->
                 <ul class="list-unstyled">
                     <li>
-                        <a href="http://paypal.me/JustinDerks">Paypal Me</a>
+                        <a href="index.php">Main-Page</a>
                     </li>
                 </ul>
             </div>
