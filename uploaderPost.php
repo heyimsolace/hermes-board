@@ -27,13 +27,16 @@ try{
                 "tag2" => $heels["heelTag2"],
                 "tag3" => $heels["heelTag3"]
             );
-            if (in_array($heelTag1, $existingHeelTags) && in_array($heelTag2, $existingHeelTags) && in_array($heelTag3, $existingHeelTags)){
+            if (in_array($heelTag1, $existingHeelTags) && in_array($heelTag2, $existingHeelTags) && in_array($heelTag3, $existingHeelTags)) {
                 $heelExists = true;
                 $heelID = $heels['heelID'];
                 $heelName = $heels['heelName'];
                 echo "heel wurde gefunden: " . $heelName;
                 break;
-            }
+            } else {
+                echo "<h2>Your tag combination does not exist.</h2>";
+
+                }
         }
         $db->commit();
     }
