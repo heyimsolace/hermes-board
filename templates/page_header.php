@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo_tiny.png">
 
-    <script src="https://cdn.tiny.cloud/1/zn90lnd2lspntbncar9avj072ocbaosr3p6bdxcxlfoku7qr/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
-
 </head>
 <body>
 <!-- Navigation Bar-->

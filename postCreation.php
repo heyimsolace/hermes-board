@@ -1,8 +1,11 @@
 <?php
 $activePage = 'index';
 include __DIR__ . '/templates/page_header.php';
-?>
 
+if (!isset($_POST['login'])) {
+    echo "<script>window.setTimeout(function(){ window.location.href = 'index.php'; },10);</script>";
+}
+?>
 <div class="container postCreation">
     <form action="uploaderPost.php" method="post" enctype="multipart/form-data">
         <div class="row align-items-center">
@@ -31,8 +34,6 @@ include __DIR__ . '/templates/page_header.php';
         </div>
     </form>
 </div>
-
-
 <?php
 include __DIR__ . '/templates/page_footer.php'; ?>
 

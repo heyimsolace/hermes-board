@@ -25,12 +25,12 @@ if($_REQUEST['dest'] == 'post') {
                     <button class="btn btn-primary" type="submit">Login!</button>
                 </div>
                 </form>
-                <div>
-                    <h3>Not Registered?</h3>
-                    <form action="register.php">
-                        <button class="btn btn-primary" >Register!</button>
-                    </form>
-                </div>
+
+                <h3>Not Registed?</h3>
+                <form action="register.php">
+                    <button class="btn btn-primary">Sign Up!</button>
+                </form>
+
             </div>
         </div>
 </div>
