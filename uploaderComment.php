@@ -2,38 +2,30 @@
 include 'templates/page_header.php';
 include '/templates/db.php'; // DB Verbindung -- Gibt pdo als $db
 
-$target_dir = 'img/reference/';
+$postExists = false;
 
-$heelExists = false;
-
-$heelName;
-$heelID;
+$postID = $_POST['postID'];
 $postCreatorID = $_SESSION['user'];
-
 
 // Check for duplicates
 try{
     if (!empty($database) && !empty($db)) {
         $db->beginTransaction();
 
-        $sql = $db->query("SELECT * FROM heel");
+        $sql = $db->query("SELECT postID FROM post where postID=$postID");
 
-        foreach ($sql->fetchAll() as $heels) {
-
-            $existingHeelTags = array(
-                "tag1" => $heels["heelTag1"],
-                "tag2" => $heels["heelTag2"],
-                "tag3" => $heels["heelTag3"]
-            );
-            if (in_array($_POST["heelTag1"], $existingHeelTags) && in_array($_POST["heelTag2"], $existingHeelTags) && in_array($_POST["heelTag3"], $existingHeelTags)){
-                $heelExists = true;
-                $heelID = $heels['heelID'];
-                $heelName = $heels['heelName'];
-                echo "heel wurde gefunden: " . $heelName;
-                break;
+        foreach ($sql->fetchAll() as $posts) {
+            if(isset($posts[0])) {
+                if (in_array($_POST["heelTag1"], $existingHeelTags) && in_array($_POST["heelTag2"], $existingHeelTags) && in_array($_POST["heelTag3"], $existingHeelTags)){
+                    $heelExists = true;
+                    $heelID = $heels['heelID'];
+                    $heelName = $heels['heelName'];
+                    echo "heel wurde gefunden: " . $heelName;
+                    break;
+                }
             }
-        }
-        $db->commit();
+            $db->commit();
+            }
     }
 } catch (PDOException $e1) {
     echo "Error... " . $e1->getMessage();

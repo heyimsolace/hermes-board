@@ -21,5 +21,9 @@ echo "fuck";
         <p class="card-text"><?= $postContent?></p>
         <br/>
         <i> ~ <?=$sqlUserName[0]?></i>
+        <form action="login.php?dest=comment" method="post">
+            <button type="submit" class="btn btn-link">Comment</button>
+            <input type="hidden" value="<?$postID?>" name="postID">
+        </form>
     </div>
 </div>

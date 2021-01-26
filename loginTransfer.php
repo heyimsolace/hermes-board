@@ -10,6 +10,10 @@ $username = strtolower($_POST['emailorusername']);
 $password = $_POST ['password'];
 $password = md5($_POST['password']);
 $destination = $_POST['destination'];
+if (isset($_POST['postID'])){
+    $postID = $_POST['postID'];
+}
+
 
 $search_user = $pdo->prepare("SELECT userID From user WHERE (userName = :emailorusername OR userEMAIL =:emailorusername) AND userPassword = :password");
 $search_user->bindParam('emailorusername', $username);
@@ -24,8 +28,11 @@ if ($search_user->rowCount() == 1) {
         echo "<h2>Login Successfull</h2>";
         echo "<form id='form' action='$destination' method='post'>
                          <input value='true' type='hidden' name='login'>
-                         <input value='$userID' type='hidden' name='userID'>
-                        </form>";
+                         <input value='$userID' type='hidden' name='userID'>";
+                         if (isset($postID)){
+                             echo "<input value='$postID' type='hidden' name='postID'>";
+                         }
+                        echo "</form>";
         echo "<script type='text/javascript'>
                         window.setTimeout(function() { document.getElementById('form').submit()},3000);
                         </script>";
