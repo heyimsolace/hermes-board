@@ -34,8 +34,6 @@ try{
                 echo "heel wurde gefunden: " . $heelName;
                 break;
             } else {
-                echo "<h2>Your tag combination does not exist.</h2>";
-
                 }
         }
         $db->commit();
@@ -76,16 +74,16 @@ if ($heelExists == true) {
     } catch (PDOException $e1) {
         echo "<h1>Error... " . $e1->getMessage() . "</h1>";
         $db->rollBack();
-        echo "<script>window.setTimeout(function(){ window.location.href = 'postCreation.php'; }, 5000);</script>";
+        echo "<script>window.setTimeout(function(){ window.location.href = 'index.php'; }, 5000);</script>";
     } catch (Exception $e2) {
         echo "<h1>Error... " . $e2->getMessage() . "</h1>";
         $db->rollBack();
-        echo "<script>window.setTimeout(function(){ window.location.href = 'postCreation.php'; }, 5000);</script>";
+        echo "<script>window.setTimeout(function(){ window.location.href = 'index.php'; }, 5000);</script>";
     }
 
 } else {
-    echo "<h1>Your post was not created.</h1>";
-    echo "<script>window.setTimeout(function(){ window.location.href = 'postCreation.php'; }, 5000);</script>";
+    echo "<h1>Your tag combination does not Exist. Your post was not created.</h1>";
+    echo "<script>window.setTimeout(function(){ window.location.href = 'index.php'; }, 5000);</script>";
 }
 include 'templates/page_footer.php';
 ?>
